@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: #fafaf8;
+  --color-foreground: #161616;
+  --color-muted: #a0a0a0;
+  --font-sans: 'Inter', sans-serif;
+}
+
+:root {
+  --bg-main: #0B0B0B;
+  --bg-soft: #111111;
+  --text-primary: #EAEAEA;
+  --text-secondary: #A0A0A0;
+  --text-tertiary: #666666;
+  --hover-overlay: rgba(255, 255, 255, 0.05);
+  --border-subtle: rgba(255,255,255,0.08);
+  --background: #0B0B0B;
+  --foreground: #EAEAEA;
+  --muted: #A0A0A0;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero-name {
+  font-size: clamp(28px, 4vw, 52px);
+  font-weight: 300;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #EAEAEA;
+  margin: 0 0 10px;
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+
+.hero-role {
+  font-size: clamp(11px, 1.1vw, 13px);
+  font-weight: 400;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #A0A0A0;
+  margin: 0 0 6px;
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+  animation-delay: 0.55s;
+}
+
+.hero-tagline {
+  font-size: clamp(11px, 1vw, 12px);
+  font-weight: 300;
+  letter-spacing: 0.14em;
+  color: #666666;
+  margin: 0;
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+  animation-delay: 0.85s;
+  font-family: "KaiTi", "楷体", "STKaiti", serif;
+}
+
+.grayscale-filter {
+  filter: grayscale(100%);
+}
+
+/* Responsive works grid */
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 72px 48px;
+}
+
+@media (max-width: 640px) {
+  .works-grid {
+    grid-template-columns: 1fr;
+    gap: 48px 0;
+  }
+
+  .nav-logo {
+    font-size: 16px !important;
+  }
+
+  .nav-link {
+    font-size: 12px !important;
+  }
+
+  .nav-bar {
+    padding: 20px 20px !important;
+  }
+
+  .works-main {
+    padding: 80px 20px 60px !important;
+  }
+
+  .card-title {
+    font-size: 16px !important;
+  }
+
+  .card-meta {
+    font-size: 12px !important;
+  }
+}

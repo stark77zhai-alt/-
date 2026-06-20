@@ -1,0 +1,117 @@
+import { Link } from "wouter";
+import { projects } from "@/data/projects";
+import Footer from "@/components/Footer";
+
+const base = import.meta.env.BASE_URL;
+
+export default function Home() {
+  return (
+    <div className="min-h-screen" style={{ fontFamily: "'Space Grotesk', system-ui, sans-serif", background: "#0B0B0B", color: "#EAEAEA" }}>
+
+      {/* Nav */}
+      <nav className="nav-bar" style={{
+        position: "fixed",
+        top: 0, left: 0, right: 0,
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        padding: "28px 48px",
+        zIndex: 50,
+        background: "rgba(11,11,11,0.92)",
+        backdropFilter: "blur(8px)",
+        fontFamily: '"KaiTi", "楷体", "STKaiti", "AR PL UKai CN", serif',
+      }}>
+        <span className="nav-logo" style={{ fontSize: "22px", fontWeight: 500, letterSpacing: "0.04em", color: "#EAEAEA" }}>
+          ZHAI
+        </span>
+        <span style={{ position: "absolute", left: "50%", transform: "translateX(-50%)", display: "flex", flexDirection: "column", alignItems: "center", gap: "2px", fontFamily: '"KaiTi", "楷体", "STKaiti", "AR PL UKai CN", serif' }}>
+          <span style={{ fontSize: "13px", fontWeight: 400, letterSpacing: "0.18em", textTransform: "uppercase", color: "#666666" }}>Cinematographer</span>
+          <span style={{ fontSize: "11px", fontWeight: 400, letterSpacing: "0.1em", color: "#666666" }}>观察自然</span>
+        </span>
+        <div style={{ display: "flex", gap: "36px" }}>
+          <Link href="/reel" style={{ fontSize: "15px", fontWeight: 400, letterSpacing: "0.12em", textTransform: "uppercase", color: "#666666", textDecoration: "none", transition: "color 0.4s ease" }}
+            onMouseEnter={e => (e.currentTarget as HTMLElement).style.color = "#EAEAEA"}
+            onMouseLeave={e => (e.currentTarget as HTMLElement).style.color = "#666666"}>Reel</Link>
+          <Link href="/about" style={{ fontSize: "15px", fontWeight: 400, letterSpacing: "0.12em", textTransform: "uppercase", color: "#666666", textDecoration: "none", transition: "color 0.4s ease" }}
+            onMouseEnter={e => (e.currentTarget as HTMLElement).style.color = "#EAEAEA"}
+            onMouseLeave={e => (e.currentTarget as HTMLElement).style.color = "#666666"}>About</Link>
+          <Link href="/contact" style={{ fontSize: "15px", fontWeight: 400, letterSpacing: "0.12em", textTransform: "uppercase", color: "#666666", textDecoration: "none", transition: "color 0.4s ease" }}
+            onMouseEnter={e => (e.currentTarget as HTMLElement).style.color = "#EAEAEA"}
+            onMouseLeave={e => (e.currentTarget as HTMLElement).style.color = "#666666"}>Contact</Link>
+        </div>
+      </nav>
+
+      {/* Works grid */}
+      <main className="works-main" style={{ maxWidth: "1280px", margin: "0 auto", padding: "100px 48px 80px" }}>
+        <div className="works-grid">
+          {projects.map((project) => (
+            <Link key={project.id} href={`/works/${project.id}`} style={{ textDecoration: "none", display: "block", color: "inherit" }}>
+              <div className="group" style={{ cursor: "pointer" }}>
+                {/* Image */}
+                <div
+                  style={{ position: "relative", overflow: "hidden", aspectRatio: "16/9", background: "#0B0B0B", borderRadius: "6px" }}
+                  onMouseEnter={e => {
+                    const img = (e.currentTarget as HTMLDivElement).querySelector("img") as HTMLImageElement;
+                    if (img) img.style.transform = "scale(1.03)";
+                    const title = (e.currentTarget as HTMLDivElement).querySelector(".title-overlay") as HTMLDivElement;
+                    if (title) title.style.opacity = "0";
+                    const fog = (e.currentTarget as HTMLDivElement).querySelector(".fog-overlay") as HTMLDivElement;
+                    if (fog) fog.style.opacity = "1";
+                  }}
+                  onMouseLeave={e => {
+                    const img = (e.currentTarget as HTMLDivElement).querySelector("img") as HTMLImageElement;
+                    if (img) img.style.transform = "scale(1)";
+                    const title = (e.currentTarget as HTMLDivElement).querySelector(".title-overlay") as HTMLDivElement;
+                    if (title) title.style.opacity = "1";
+                    const fog = (e.currentTarget as HTMLDivElement).querySelector(".fog-overlay") as HTMLDivElement;
+                    if (fog) fog.style.opacity = "0";
+                  }}
+                >
+                  <img
+                    src={`${base}${project.thumbnail}`}
+                    alt={project.title}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                      transition: "transform 0.7s ease",
+                      display: "block",
+                    }}
+                  />
+                  {/* White fog on hover */}
+                  <div className="fog-overlay" style={{
+                    position: "absolute", inset: 0,
+                    background: "rgba(255,255,255,0.05)",
+                    pointerEvents: "none",
+                    opacity: 0,
+                    transition: "opacity 0.4s ease",
+                  }} />
+                  {/* Title overlay */}
+                  <div className="title-overlay" style={{
+                    position: "absolute", inset: 0,
+                    display: "flex", alignItems: "center", justifyContent: "center",
+                    pointerEvents: "none",
+                    opacity: 1,
+                    transition: "opacity 0.4s ease",
+                  }}>
+                    <p style={{
+                      fontSize: "32px", fontWeight: 500, letterSpacing: "0.12em",
+                      color: "#EAEAEA", textTransform: "uppercase", margin: 0,
+                      textShadow: "0 1px 16px rgba(0,0,0,0.8)",
+                    }}>{project.title}</p>
+                  </div>
+                </div>
+                {/* Info */}
+                <div style={{ marginTop: "16px", display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
+                  <p style={{ fontSize: "13px", fontWeight: 300, color: "#666666", letterSpacing: "0.06em", margin: 0 }}>{project.type}</p>
+                  <p style={{ fontSize: "13px", fontWeight: 300, color: "#A0A0A0", letterSpacing: "0.06em", margin: 0 }}>{project.year}</p>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </main>
+      <Footer />
+    </div>
+  );
+}
