@@ -93,6 +93,7 @@ export default function Home() {
                 <div style={{ marginTop: "16px", display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
                   <div style={{ display: "flex", gap: "12px", alignItems: "baseline" }}>
                     <p style={{ fontSize: "13px", fontWeight: 300, color: "#666666", letterSpacing: "0.06em", margin: 0 }}>{project.type}</p>
+                    <p style={{ fontSize: "13px", fontWeight: 300, color: "#A0A0A0", letterSpacing: "0.06em", margin: 0 }}>{project.title}</p>
                     {project.format && (
                       <p style={{ fontSize: "11px", fontWeight: 300, color: "#555555", letterSpacing: "0.12em", margin: 0 }}>{project.format}</p>
                     )}
