@@ -24,7 +24,7 @@ export default function Contact() {
         </div>
       </nav>
 
-      <main style={{ maxWidth: "480px", margin: "0 auto", padding: "160px 48px 80px" }}>
+      <main className="contact-main">
         <p style={{ fontSize: "13px", fontWeight: 400, letterSpacing: "0.16em", textTransform: "uppercase", color: "#666666", marginBottom: "48px" }}>Get in touch</p>
         <div style={{ display: "flex", flexDirection: "column", gap: "28px" }}>
           <div>

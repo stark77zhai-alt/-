@@ -26,7 +26,7 @@ export default function About() {
         </div>
       </nav>
 
-      <main style={{ maxWidth: "960px", margin: "0 auto", padding: "160px 48px 80px", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px", alignItems: "start" }}>
+      <main className="about-main">
         <div>
           <p style={{ fontSize: "13px", fontWeight: 400, letterSpacing: "0.16em", textTransform: "uppercase", color: "#666666", marginBottom: "28px" }}>翟正龙</p>
           <p style={{ fontSize: "16px", fontWeight: 300, lineHeight: 1.85, color: "#A0A0A0", letterSpacing: "0.01em", marginBottom: "20px" }}>

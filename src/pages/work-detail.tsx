@@ -83,9 +83,9 @@ export default function WorkDetail() {
       </div>
 
       {/* Stills grid — 3 columns */}
-      <div style={{ padding: "32px 60px 0", display: "flex", flexDirection: "column", gap: "8px" }}>
+      <div className="detail-stills">
         {rows.map((row, i) => (
-          <div key={i} style={{ display: "grid", gridTemplateColumns: `repeat(${cols}, 1fr)`, gap: "8px" }}>
+          <div key={i} className="detail-stills-cols">
             {row.map((src, j) => {
               const idx = i * cols + j;
               return (
@@ -108,7 +108,7 @@ export default function WorkDetail() {
       </div>
 
       {/* Back link */}
-      <div style={{ padding: "60px 48px 40px" }}>
+      <div className="detail-back">
         <Link href="/" style={{ fontSize: "11px", fontWeight: 400, letterSpacing: "0.2em", textTransform: "uppercase", color: "#444", textDecoration: "none" }}
           className="hover:text-[#e8e4df] transition-colors duration-300">
           ← All Works

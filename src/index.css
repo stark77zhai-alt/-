@@ -89,10 +89,60 @@ h1, h2, h3, h4, h5, h6 {
   gap: 72px 48px;
 }
 
+/* About page */
+.about-main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 160px 48px 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+/* Work detail stills grid */
+.detail-stills {
+  padding: 32px 60px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.detail-stills-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.detail-back {
+  padding: 60px 48px 40px;
+}
+
+/* Contact page */
+.contact-main {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 160px 48px 80px;
+}
+
+/* Nav center label (home) */
+.nav-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+/* ─── Mobile ─── */
 @media (max-width: 640px) {
+
+  /* Home */
   .works-grid {
     grid-template-columns: 1fr;
-    gap: 48px 0;
+    gap: 40px 0;
   }
 
   .nav-logo {
@@ -104,18 +154,40 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .nav-bar {
-    padding: 20px 20px !important;
+    padding: 18px 20px !important;
   }
 
   .works-main {
-    padding: 80px 20px 60px !important;
+    padding: 72px 16px 60px !important;
   }
 
-  .card-title {
-    font-size: 16px !important;
+  .nav-center {
+    display: none;
   }
 
-  .card-meta {
-    font-size: 12px !important;
+  /* About */
+  .about-main {
+    grid-template-columns: 1fr;
+    padding: 90px 20px 60px;
+    gap: 40px;
+  }
+
+  /* Work detail */
+  .detail-stills {
+    padding: 16px 12px 0;
+  }
+
+  .detail-stills-cols {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+  }
+
+  .detail-back {
+    padding: 40px 20px 32px;
+  }
+
+  /* Contact */
+  .contact-main {
+    padding: 90px 20px 60px;
   }
 }

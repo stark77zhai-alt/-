@@ -24,7 +24,7 @@ export default function Home() {
         <span className="nav-logo" style={{ fontSize: "22px", fontWeight: 500, letterSpacing: "0.04em", color: "#EAEAEA" }}>
           ZHAI
         </span>
-        <span style={{ position: "absolute", left: "50%", transform: "translateX(-50%)", display: "flex", flexDirection: "column", alignItems: "center", gap: "2px", fontFamily: '"KaiTi", "楷体", "STKaiti", "AR PL UKai CN", serif' }}>
+        <span className="nav-center" style={{ fontFamily: '"KaiTi", "楷体", "STKaiti", "AR PL UKai CN", serif' }}>
           <span style={{ fontSize: "13px", fontWeight: 400, letterSpacing: "0.18em", textTransform: "uppercase", color: "#666666" }}>Cinematographer</span>
           <span style={{ fontSize: "11px", fontWeight: 400, letterSpacing: "0.1em", color: "#666666" }}>观察自然</span>
         </span>
