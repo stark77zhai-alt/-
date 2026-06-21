@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <div className="min-h-screen" style={{ fontFamily: "'Space Grotesk', system-ui, sans-serif", background: "#0B0B0B", color: "#EAEAEA" }}>
       {/* Nav */}
-      <nav style={{
+      <nav className="nav-bar" style={{
         position: "fixed",
         top: 0, left: 0, right: 0,
         display: "flex",
