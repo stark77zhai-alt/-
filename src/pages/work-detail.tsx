@@ -73,12 +73,12 @@ export default function WorkDetail() {
         </div>
       </nav>
 
-      {/* Hero — contained */}
-      <div style={{ width: "100%", height: "50vh", overflow: "hidden", position: "relative", marginTop: "80px" }}>
+      {/* Hero — natural ratio */}
+      <div style={{ width: "100%", marginTop: "80px" }}>
         <img
           src={`${base}${hero}`}
           alt={project.title}
-          style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+          style={{ width: "100%", height: "auto", display: "block" }}
         />
       </div>
 
