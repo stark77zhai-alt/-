@@ -31,7 +31,7 @@ export default function Reel() {
           onMouseLeave={e => (e.currentTarget as HTMLElement).style.color = "#666666"}>
           ZHAI
         </Link>
-        <div style={{ display: "flex", gap: "36px" }}>
+        <div style={{ display: "flex", gap: "36px", fontFamily: '"KaiTi", "楷体", "STKaiti", "AR PL UKai CN", serif' }}>
           {[
             { href: "/reel", label: "Reel", active: true },
             { href: "/about", label: "About", active: false },
