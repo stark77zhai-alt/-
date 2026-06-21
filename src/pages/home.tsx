@@ -28,7 +28,6 @@ export default function Home() {
           <span style={{ fontSize: "13px", fontWeight: 400, letterSpacing: "0.18em", textTransform: "uppercase", color: "#666666" }}>Cinematographer</span>
           <span style={{ fontSize: "11px", fontWeight: 400, letterSpacing: "0.1em", color: "#666666" }}>观察自然</span>
         </span>
-        <span className="nav-tagline-mobile" style={{ fontFamily: '"KaiTi", "楷体", "STKaiti", "AR PL UKai CN", serif' }}>观察自然</span>
         <div style={{ display: "flex", gap: "36px" }}>
           <Link href="/reel" style={{ fontSize: "15px", fontWeight: 400, letterSpacing: "0.12em", textTransform: "uppercase", color: "#666666", textDecoration: "none", transition: "color 0.4s ease" }}
             onMouseEnter={e => (e.currentTarget as HTMLElement).style.color = "#EAEAEA"}
@@ -41,6 +40,9 @@ export default function Home() {
             onMouseLeave={e => (e.currentTarget as HTMLElement).style.color = "#666666"}>Contact</Link>
         </div>
       </nav>
+
+      {/* Mobile tagline — below nav */}
+      <div className="nav-tagline-mobile" style={{ fontFamily: '"KaiTi", "楷体", "STKaiti", "AR PL UKai CN", serif' }}>观察自然</div>
 
       {/* Works grid */}
       <main className="works-main" style={{ maxWidth: "1280px", margin: "0 auto", padding: "100px 48px 80px" }}>
