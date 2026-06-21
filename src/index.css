@@ -164,7 +164,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .works-main {
-    padding: 68px 12px 40px !important;
+    padding: 90px 12px 40px !important;
   }
 
   .nav-center {
@@ -174,16 +174,17 @@ h1, h2, h3, h4, h5, h6 {
   .nav-tagline-mobile {
     display: block;
     position: fixed;
-    top: 56px;
+    top: 48px;
     left: 0;
     right: 0;
     text-align: center;
-    font-size: 10px;
     font-weight: 400;
-    letter-spacing: 0.14em;
     color: #444444;
     z-index: 49;
     pointer-events: none;
+    background: rgba(11,11,11,0.92);
+    padding: 6px 0 8px;
+    backdrop-filter: blur(8px);
   }
 
   /* About */

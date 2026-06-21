@@ -42,7 +42,10 @@ export default function Home() {
       </nav>
 
       {/* Mobile tagline — below nav */}
-      <div className="nav-tagline-mobile" style={{ fontFamily: '"KaiTi", "楷体", "STKaiti", "AR PL UKai CN", serif' }}>观察自然</div>
+      <div className="nav-tagline-mobile" style={{ fontFamily: '"KaiTi", "楷体", "STKaiti", "AR PL UKai CN", serif' }}>
+        <span style={{ display: "block", fontSize: "10px", letterSpacing: "0.18em", textTransform: "uppercase", color: "#555555", marginBottom: "2px" }}>Cinematographer</span>
+        <span style={{ display: "block", fontSize: "10px", letterSpacing: "0.1em", color: "#555555" }}>观察自然</span>
+      </div>
 
       {/* Works grid */}
       <main className="works-main" style={{ maxWidth: "1280px", margin: "0 auto", padding: "100px 48px 80px" }}>
