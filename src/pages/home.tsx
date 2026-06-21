@@ -42,9 +42,9 @@ export default function Home() {
       </nav>
 
       {/* Mobile tagline — below nav */}
-      <div className="nav-tagline-mobile" style={{ fontFamily: '"KaiTi", "楷体", "STKaiti", "AR PL UKai CN", serif' }}>
-        <span style={{ display: "block", fontSize: "10px", letterSpacing: "0.18em", textTransform: "uppercase", color: "#555555", marginBottom: "2px" }}>Cinematographer</span>
-        <span style={{ display: "block", fontSize: "10px", letterSpacing: "0.1em", color: "#555555" }}>观察自然</span>
+      <div className="nav-tagline-mobile" style={{ fontFamily: '"KaiTi", "楷体", "STKaiti", "AR PL UKai CN", serif', lineHeight: 1.5 }}>
+        <span style={{ display: "block", fontSize: "9px", letterSpacing: "0.18em", textTransform: "uppercase", color: "#555555" }}>Cinematographer</span>
+        <span style={{ display: "block", fontSize: "9px", letterSpacing: "0.1em", color: "#555555" }}>观察自然</span>
       </div>
 
       {/* Works grid */}
