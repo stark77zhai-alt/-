@@ -30,17 +30,11 @@ export default function About() {
         <div>
           <p style={{ fontSize: "13px", fontWeight: 400, letterSpacing: "0.16em", textTransform: "uppercase", color: "#666666", marginBottom: "28px" }}>翟正龙</p>
           <p style={{ fontSize: "16px", fontWeight: 300, lineHeight: 1.85, color: "#A0A0A0", letterSpacing: "0.01em", marginBottom: "20px" }}>
-            Zhai Zhenglong is a cinematographer currently pursuing an MFA in Cinematography at the New York Film Academy (2024–2026). Based in Shenzhen / Guangzhou, his work as Director of Photography spans narrative short films and long-form projects.
+            Zhai Zhenglong is a cinematographer born in Nanchong, Sichuan, and raised in Shenzhen. He spent two years studying cinematography in the United States. His work as Director of Photography spans narrative short films and long-form projects.
           </p>
           <p style={{ fontSize: "16px", fontWeight: 300, lineHeight: 1.85, color: "#666666", letterSpacing: "0.01em", marginBottom: "40px" }}>
             Telling stories through light and shadow.
           </p>
-          <div style={{ borderTop: "1px solid rgba(255,255,255,0.08)", paddingTop: "24px" }}>
-            <p style={{ fontSize: "13px", fontWeight: 300, letterSpacing: "0.1em", textTransform: "uppercase", color: "#666666", lineHeight: 2 }}>
-              New York Film Academy<br />
-              MFA Cinematography · 2024–2026
-            </p>
-          </div>
         </div>
         <div>
           <img
