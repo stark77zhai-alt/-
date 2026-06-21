@@ -148,7 +148,7 @@ h1, h2, h3, h4, h5, h6 {
   /* Home */
   .works-grid {
     grid-template-columns: 1fr;
-    gap: 40px 0;
+    gap: 24px 0;
   }
 
   .nav-logo {
