@@ -61,7 +61,7 @@ export default function WorkDetail() {
         padding: "28px 48px",
         zIndex: 50,
         background: "rgba(11,11,11,0)",
-        fontFamily: '"KaiTi", "楷体", "STKaiti", serif',
+        fontFamily: '"Ma Shan Zheng", "KaiTi", "楷体", serif',
       }}>
         <Link href="/" style={{ fontSize: "17px", fontWeight: 500, letterSpacing: "0.04em", color: "#EAEAEA", textDecoration: "none" }}>
           ZHAI

@@ -19,12 +19,12 @@ export default function Home() {
         zIndex: 50,
         background: "rgba(11,11,11,0.92)",
         backdropFilter: "blur(8px)",
-        fontFamily: '"KaiTi", "楷体", "STKaiti", "AR PL UKai CN", serif',
+        fontFamily: "'Space Grotesk', system-ui, sans-serif",
       }}>
         <span className="nav-logo" style={{ fontSize: "22px", fontWeight: 500, letterSpacing: "0.04em", color: "#EAEAEA" }}>
           ZHAI
         </span>
-        <span className="nav-center" style={{ fontFamily: '"KaiTi", "楷体", "STKaiti", "AR PL UKai CN", serif' }}>
+        <span className="nav-center" style={{ fontFamily: '"Ma Shan Zheng", "KaiTi", "楷体", serif' }}>
           <span style={{ fontSize: "13px", fontWeight: 400, letterSpacing: "0.18em", textTransform: "uppercase", color: "#666666" }}>Cinematographer</span>
           <span style={{ fontSize: "11px", fontWeight: 400, letterSpacing: "0.1em", color: "#666666" }}>观察自然</span>
         </span>
@@ -42,7 +42,7 @@ export default function Home() {
       </nav>
 
       {/* Mobile tagline — below nav */}
-      <div className="nav-tagline-mobile" style={{ fontFamily: '"KaiTi", "楷体", "STKaiti", "AR PL UKai CN", serif', lineHeight: 1.5 }}>
+      <div className="nav-tagline-mobile" style={{ fontFamily: '"Ma Shan Zheng", "KaiTi", "楷体", serif', lineHeight: 1.5 }}>
         <span style={{ display: "block", fontSize: "9px", letterSpacing: "0.18em", textTransform: "uppercase", color: "#555555" }}>Cinematographer</span>
         <span style={{ display: "block", fontSize: "9px", letterSpacing: "0.1em", color: "#555555" }}>观察自然</span>
       </div>
