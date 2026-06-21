@@ -36,7 +36,7 @@ export const projects: Project[] = [
     id: "letter-take-wind-away",
     title: "LETTER TAKE WIND AWAY",
     year: "2026",
-    format: "",
+    format: "16mm",
     duration: "",
     location: "",
     role: "Director of Photography",
