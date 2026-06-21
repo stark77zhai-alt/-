@@ -25,7 +25,7 @@ export default function Home() {
           ZHAI
         </span>
         <span className="nav-center">
-          <span style={{ fontSize: "13px", fontWeight: 400, letterSpacing: "0.18em", textTransform: "uppercase", color: "#666666" }}>Cinematographer</span>
+          <span style={{ fontSize: "13px", fontWeight: 400, letterSpacing: "0.18em", textTransform: "uppercase", color: "#666666", fontFamily: '"KaiTi", "楷体", "STKaiti", "AR PL UKai CN", serif' }}>Cinematographer</span>
           <span style={{ fontSize: "11px", fontWeight: 400, letterSpacing: "0.1em", color: "#666666", fontFamily: '"Ma Shan Zheng", "KaiTi", "楷体", serif' }}>观察自然</span>
         </span>
         <div style={{ display: "flex", gap: "36px", fontFamily: '"KaiTi", "楷体", "STKaiti", "AR PL UKai CN", serif' }}>
@@ -43,7 +43,7 @@ export default function Home() {
 
       {/* Mobile tagline — below nav */}
       <div className="nav-tagline-mobile" style={{ lineHeight: 1.5 }}>
-        <span style={{ display: "block", fontSize: "9px", letterSpacing: "0.18em", textTransform: "uppercase", color: "#555555" }}>Cinematographer</span>
+        <span style={{ display: "block", fontSize: "9px", letterSpacing: "0.18em", textTransform: "uppercase", color: "#555555", fontFamily: '"KaiTi", "楷体", "STKaiti", "AR PL UKai CN", serif' }}>Cinematographer</span>
         <span style={{ display: "block", fontSize: "9px", letterSpacing: "0.1em", color: "#555555", fontFamily: '"Ma Shan Zheng", "KaiTi", "楷体", serif' }}>观察自然</span>
       </div>
 
