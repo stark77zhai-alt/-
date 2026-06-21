@@ -35,6 +35,12 @@ export default function About() {
           <p style={{ fontSize: "16px", fontWeight: 300, lineHeight: 1.85, color: "#666666", letterSpacing: "0.01em", marginBottom: "40px" }}>
             Telling stories through light and shadow.
           </p>
+          <div style={{ borderTop: "1px solid rgba(255,255,255,0.08)", paddingTop: "24px" }}>
+            <p style={{ fontSize: "13px", fontWeight: 300, letterSpacing: "0.1em", textTransform: "uppercase", color: "#666666", lineHeight: 2 }}>
+              Society of Camera Operators<br />
+              <span style={{ color: "#444444" }}>Student Member</span>
+            </p>
+          </div>
         </div>
         <div>
           <img
