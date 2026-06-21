@@ -73,24 +73,13 @@ export default function WorkDetail() {
         </div>
       </nav>
 
-      {/* Hero — full screen */}
-      <div style={{ width: "100%", height: "100vh", overflow: "hidden", position: "relative" }}>
+      {/* Hero — contained */}
+      <div style={{ width: "100%", height: "50vh", overflow: "hidden", position: "relative", marginTop: "80px" }}>
         <img
           src={`${base}${hero}`}
           alt={project.title}
           style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
         />
-        <div style={{
-          position: "absolute", bottom: "40px", left: "48px",
-          display: "flex", alignItems: "baseline", gap: "16px",
-        }}>
-          <span style={{ fontSize: "12px", fontWeight: 400, letterSpacing: "0.2em", textTransform: "uppercase", color: "#A0A0A0" }}>
-            {project.title}
-          </span>
-          <span style={{ fontSize: "11px", fontWeight: 300, letterSpacing: "0.1em", color: "#666666", marginLeft: "20px" }}>
-            {project.year}
-          </span>
-        </div>
       </div>
 
       {/* Stills grid — 3 columns */}
