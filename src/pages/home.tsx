@@ -28,7 +28,7 @@ export default function Home() {
           <span style={{ fontSize: "13px", fontWeight: 400, letterSpacing: "0.18em", textTransform: "uppercase", color: "#666666" }}>Cinematographer</span>
           <span style={{ fontSize: "11px", fontWeight: 400, letterSpacing: "0.1em", color: "#666666", fontFamily: '"Ma Shan Zheng", "KaiTi", "楷体", serif' }}>观察自然</span>
         </span>
-        <div style={{ display: "flex", gap: "36px" }}>
+        <div style={{ display: "flex", gap: "36px", fontFamily: '"KaiTi", "楷体", "STKaiti", "AR PL UKai CN", serif' }}>
           <Link href="/reel" style={{ fontSize: "15px", fontWeight: 400, letterSpacing: "0.12em", textTransform: "uppercase", color: "#666666", textDecoration: "none", transition: "color 0.4s ease" }}
             onMouseEnter={e => (e.currentTarget as HTMLElement).style.color = "#EAEAEA"}
             onMouseLeave={e => (e.currentTarget as HTMLElement).style.color = "#666666"}>Reel</Link>
