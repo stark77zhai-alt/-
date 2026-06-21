@@ -53,16 +53,12 @@ export default function Home() {
                   onMouseEnter={e => {
                     const img = (e.currentTarget as HTMLDivElement).querySelector("img") as HTMLImageElement;
                     if (img) img.style.transform = "scale(1.03)";
-                    const title = (e.currentTarget as HTMLDivElement).querySelector(".title-overlay") as HTMLDivElement;
-                    if (title) title.style.opacity = "0";
                     const fog = (e.currentTarget as HTMLDivElement).querySelector(".fog-overlay") as HTMLDivElement;
                     if (fog) fog.style.opacity = "1";
                   }}
                   onMouseLeave={e => {
                     const img = (e.currentTarget as HTMLDivElement).querySelector("img") as HTMLImageElement;
                     if (img) img.style.transform = "scale(1)";
-                    const title = (e.currentTarget as HTMLDivElement).querySelector(".title-overlay") as HTMLDivElement;
-                    if (title) title.style.opacity = "1";
                     const fog = (e.currentTarget as HTMLDivElement).querySelector(".fog-overlay") as HTMLDivElement;
                     if (fog) fog.style.opacity = "0";
                   }}
@@ -86,20 +82,6 @@ export default function Home() {
                     opacity: 0,
                     transition: "opacity 0.4s ease",
                   }} />
-                  {/* Title overlay */}
-                  <div className="title-overlay" style={{
-                    position: "absolute", inset: 0,
-                    display: "flex", alignItems: "center", justifyContent: "center",
-                    pointerEvents: "none",
-                    opacity: 1,
-                    transition: "opacity 0.4s ease",
-                  }}>
-                    <p style={{
-                      fontSize: "32px", fontWeight: 500, letterSpacing: "0.12em",
-                      color: "#EAEAEA", textTransform: "uppercase", margin: 0,
-                      textShadow: "0 1px 16px rgba(0,0,0,0.8)",
-                    }}>{project.title}</p>
-                  </div>
                 </div>
                 {/* Info */}
                 <div style={{ marginTop: "16px", display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
