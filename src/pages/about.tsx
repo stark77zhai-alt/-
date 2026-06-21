@@ -30,7 +30,13 @@ export default function About() {
         <div>
           <p style={{ fontSize: "13px", fontWeight: 400, letterSpacing: "0.16em", textTransform: "uppercase", color: "#666666", marginBottom: "28px" }}>翟正龙</p>
           <p style={{ fontSize: "16px", fontWeight: 300, lineHeight: 1.85, color: "#A0A0A0", letterSpacing: "0.01em", marginBottom: "20px" }}>
-            Zhai Zhenglong is a cinematographer born in Nanchong, Sichuan, and raised in Shenzhen. He spent two years studying cinematography in the United States. His work as Director of Photography spans narrative short films and long-form projects.
+            Zhai Zhenglong is a cinematographer born in Nanchong, Sichuan, and raised in Shenzhen.
+          </p>
+          <p style={{ fontSize: "16px", fontWeight: 300, lineHeight: 1.85, color: "#A0A0A0", letterSpacing: "0.01em", marginBottom: "20px" }}>
+            He spent two years studying cinematography in the United States.
+          </p>
+          <p style={{ fontSize: "16px", fontWeight: 300, lineHeight: 1.85, color: "#A0A0A0", letterSpacing: "0.01em", marginBottom: "20px" }}>
+            His work as Director of Photography spans narrative short films and long-form projects.
           </p>
           <p style={{ fontSize: "16px", fontWeight: 300, lineHeight: 1.85, color: "#666666", letterSpacing: "0.01em", marginBottom: "40px" }}>
             Telling stories through light and shadow.
