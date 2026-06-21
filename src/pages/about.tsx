@@ -37,17 +37,7 @@ export default function About() {
           </p>
           <div style={{ borderTop: "1px solid rgba(255,255,255,0.08)", paddingTop: "24px" }}>
             <p style={{ fontSize: "13px", fontWeight: 300, letterSpacing: "0.1em", textTransform: "uppercase", color: "#666666", lineHeight: 2 }}>
-              Society of Camera Operators
-              <span style={{
-                display: "inline-block",
-                marginLeft: "10px",
-                padding: "1px 6px",
-                border: "1px solid #444444",
-                fontSize: "10px",
-                letterSpacing: "0.12em",
-                color: "#555555",
-                verticalAlign: "middle",
-              }}>SOC</span>
+              Society of Camera Operators (SOC)
               <br />
               <span style={{ color: "#444444" }}>Student Member</span>
             </p>
