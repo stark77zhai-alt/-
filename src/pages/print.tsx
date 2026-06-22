@@ -12,34 +12,34 @@ export default function Print() {
         @media print {
           .no-print { display: none !important; }
           body { margin: 0; background: #fff; }
-          @page { size: A4; margin: 14mm 14mm; }
+          @page { size: A4; margin: 12mm 12mm; }
           .page-break { page-break-before: always; break-before: page; }
         }
 
         @media screen {
-          .print-root { max-width: 860px; margin: 0 auto; padding: 40px 48px 80px; }
-          .page-break { margin-top: 80px; padding-top: 40px; border-top: 2px dashed #ddd; }
+          .print-root { max-width: 860px; margin: 0 auto; padding: 32px 48px 60px; }
+          .page-break { margin-top: 56px; padding-top: 32px; border-top: 2px dashed #ddd; }
         }
 
-        .section-label {
+        .lbl {
           font-size: 9px;
-          letter-spacing: 0.18em;
+          letter-spacing: 0.16em;
           text-transform: uppercase;
-          color: #aaa;
-          margin-bottom: 10px;
+          color: #bbb;
+          margin-bottom: 6px;
         }
 
         .works-table { width: 100%; border-collapse: collapse; }
         .works-table th {
-          text-align: left; font-size: 9px; letter-spacing: 0.14em;
-          text-transform: uppercase; color: #aaa; font-weight: 400;
-          padding-bottom: 8px; border-bottom: 1px solid #ddd;
+          text-align: left; font-size: 9px; letter-spacing: 0.12em;
+          text-transform: uppercase; color: #bbb; font-weight: 400;
+          padding-bottom: 7px; border-bottom: 1px solid #e0e0e0;
         }
         .works-table td {
           font-size: 12px; color: #444;
-          padding: 10px 0; border-bottom: 1px solid #eee; vertical-align: middle;
+          padding: 8px 0; border-bottom: 1px solid #eee; vertical-align: middle;
         }
-        .works-table td.title { font-weight: 500; color: #111; letter-spacing: 0.03em; }
+        .works-table td.title { font-weight: 600; color: #111; letter-spacing: 0.03em; }
         .works-table td.dim { color: #999; font-size: 11px; }
 
         .project-cover {
@@ -47,14 +47,14 @@ export default function Print() {
           aspect-ratio: 16/9;
           object-fit: cover;
           display: block;
-          margin-bottom: 6px;
+          margin-bottom: 4px;
         }
 
         .stills-grid {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
-          gap: 5px;
-          margin-top: 5px;
+          gap: 4px;
+          margin-top: 4px;
         }
 
         .stills-grid img {
@@ -68,78 +68,73 @@ export default function Print() {
       <div className="print-root">
 
         {/* Print button */}
-        <div className="no-print" style={{ marginBottom: "32px", display: "flex", justifyContent: "flex-end" }}>
+        <div className="no-print" style={{ marginBottom: "24px", display: "flex", justifyContent: "flex-end" }}>
           <button
             onClick={() => window.print()}
             style={{
-              padding: "10px 24px", fontSize: "11px",
-              letterSpacing: "0.16em", textTransform: "uppercase",
+              padding: "9px 22px", fontSize: "11px",
+              letterSpacing: "0.14em", textTransform: "uppercase",
               background: "#111", color: "#fff", border: "none",
               cursor: "pointer", fontFamily: "inherit",
             }}>
-            Export PDF ↓
+            导出 PDF ↓
           </button>
         </div>
 
-        {/* ── PAGE 1: Cover + Bio + Works list ── */}
+        {/* ── 第一页：封面 + 简介 + 作品目录 ── */}
         <div>
-          {/* Header */}
-          <div style={{ marginBottom: "36px" }}>
+          <div style={{ marginBottom: "28px" }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end" }}>
-              <h1 style={{ fontSize: "40px", fontWeight: 600, letterSpacing: "0.06em", margin: 0 }}>ZHAI ZHENGLONG</h1>
-              <span style={{ fontSize: "13px", color: "#aaa", fontFamily: '"KaiTi","楷体","STKaiti",serif' }}>翟正龙</span>
+              <h1 style={{ fontSize: "38px", fontWeight: 600, letterSpacing: "0.06em", margin: 0 }}>翟正龙</h1>
+              <span style={{ fontSize: "12px", color: "#aaa", letterSpacing: "0.08em" }}>ZHAI ZHENGLONG</span>
             </div>
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", borderBottom: "2px solid #111", paddingBottom: "12px", marginTop: "4px" }}>
-              <span style={{ fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "#666", fontFamily: '"KaiTi","楷体","STKaiti",serif' }}>
-                Cinematographer · Director of Photography
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", borderBottom: "2px solid #111", paddingBottom: "10px", marginTop: "4px" }}>
+              <span style={{ fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", color: "#666", fontFamily: '"KaiTi","楷体","STKaiti",serif' }}>
+                摄影指导 · Director of Photography
               </span>
               <span style={{ fontSize: "11px", color: "#aaa" }}>2026</span>
             </div>
           </div>
 
-          {/* Bio + Contact */}
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "40px", marginBottom: "40px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "36px", marginBottom: "32px" }}>
             <div>
-              <p className="section-label">About</p>
-              <p style={{ fontSize: "12px", lineHeight: 1.9, color: "#444", margin: 0 }}>
-                Zhai Zhenglong is a cinematographer born in Nanchong, Sichuan, and raised in Shenzhen.
-                He spent two years studying cinematography in the United States.
-                His work as Director of Photography spans narrative short films and long-form projects,
-                telling stories through light and shadow.
+              <p className="lbl">简介</p>
+              <p style={{ fontSize: "12px", lineHeight: 1.85, color: "#444", margin: 0 }}>
+                翟正龙，摄影指导，出生于四川南充，成长于深圳。曾赴美国学习电影摄影两年。
+                擅长以光与影叙述故事，作品涵盖叙事短片与长片项目。
               </p>
             </div>
             <div>
-              <p className="section-label">Affiliation</p>
-              <p style={{ fontSize: "12px", lineHeight: 1.9, color: "#444", margin: "0 0 20px" }}>
-                Society of Camera Operators (SOC)<br />
-                <span style={{ color: "#aaa" }}>Student Member</span>
+              <p className="lbl">所属机构</p>
+              <p style={{ fontSize: "12px", lineHeight: 1.85, color: "#444", margin: "0 0 16px" }}>
+                美国摄影机操作者协会（SOC）<br />
+                <span style={{ color: "#aaa" }}>学生会员</span>
               </p>
-              <p className="section-label">Contact</p>
-              <p style={{ fontSize: "12px", lineHeight: 1.9, color: "#444", margin: 0 }}>
+              <p className="lbl">联系方式</p>
+              <p style={{ fontSize: "12px", lineHeight: 1.85, color: "#444", margin: 0 }}>
                 stark77zhai@gmail.com<br />
                 +86 185 9428 9284<br />
-                <span style={{ color: "#aaa" }}>Shenzhen / Guangzhou</span>
+                <span style={{ color: "#aaa" }}>深圳 / 广州</span>
               </p>
             </div>
           </div>
 
-          {/* Works table */}
-          <p className="section-label">Selected Works</p>
+          <p className="lbl">作品目录</p>
           <table className="works-table">
             <thead>
               <tr>
-                <th style={{ width: "36%" }}>Title</th>
-                <th>Type</th>
-                <th>Format</th>
-                <th>Duration</th>
-                <th style={{ textAlign: "right" }}>Year</th>
+                <th style={{ width: "38%" }}>片名</th>
+                <th>类型</th>
+                <th>格式</th>
+                <th>时长</th>
+                <th style={{ textAlign: "right" }}>年份</th>
               </tr>
             </thead>
             <tbody>
               {projects.map(p => (
                 <tr key={p.id}>
                   <td className="title">{p.title}</td>
-                  <td className="dim">{p.type}</td>
+                  <td className="dim">短片</td>
                   <td className="dim">{p.format || "—"}</td>
                   <td className="dim">{p.duration || "—"}</td>
                   <td className="dim" style={{ textAlign: "right" }}>{p.year}</td>
@@ -149,30 +144,27 @@ export default function Print() {
           </table>
         </div>
 
-        {/* ── PAGES 2+: One page per project ── */}
+        {/* ── 每个项目单独一页 ── */}
         {projects.map(p => {
           const cover = p.stills[0];
-          const stills = p.stills.slice(1, 7);
+          const stills = p.stills.slice(1, 13);
           return (
             <div key={p.id} className="page-break">
 
-              {/* Project header */}
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: "12px" }}>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: "8px" }}>
                 <div>
-                  <p className="section-label" style={{ marginBottom: "4px" }}>{p.type} · {p.role}</p>
-                  <h2 style={{ fontSize: "28px", fontWeight: 600, letterSpacing: "0.06em", margin: 0 }}>{p.title}</h2>
+                  <p className="lbl" style={{ marginBottom: "3px" }}>短片 · 摄影指导</p>
+                  <h2 style={{ fontSize: "26px", fontWeight: 600, letterSpacing: "0.06em", margin: 0 }}>{p.title}</h2>
                 </div>
                 <div style={{ textAlign: "right" }}>
-                  {p.format && <p style={{ fontSize: "11px", color: "#aaa", margin: "0 0 2px", letterSpacing: "0.1em" }}>{p.format}</p>}
-                  {p.duration && <p style={{ fontSize: "11px", color: "#aaa", margin: "0 0 2px" }}>{p.duration}</p>}
-                  <p style={{ fontSize: "13px", fontWeight: 500, margin: 0 }}>{p.year}</p>
+                  {p.format && <p style={{ fontSize: "11px", color: "#aaa", margin: "0 0 1px", letterSpacing: "0.1em" }}>{p.format}</p>}
+                  {p.duration && <p style={{ fontSize: "11px", color: "#aaa", margin: "0 0 1px" }}>{p.duration}</p>}
+                  <p style={{ fontSize: "14px", fontWeight: 600, margin: 0 }}>{p.year}</p>
                 </div>
               </div>
 
-              {/* Cover image */}
               <img src={`${base}${cover}`} alt={p.title} className="project-cover" />
 
-              {/* Stills grid */}
               {stills.length > 0 && (
                 <div className="stills-grid">
                   {stills.map((src, i) => (
@@ -185,10 +177,9 @@ export default function Print() {
           );
         })}
 
-        {/* Footer on last page */}
-        <div style={{ marginTop: "40px", borderTop: "1px solid #ddd", paddingTop: "14px", display: "flex", justifyContent: "space-between" }}>
-          <span style={{ fontSize: "10px", color: "#bbb", letterSpacing: "0.1em" }}>ZHAI ZHENGLONG · CINEMATOGRAPHER</span>
-          <span style={{ fontSize: "10px", color: "#bbb" }}>stark77zhai@gmail.com</span>
+        <div style={{ marginTop: "32px", borderTop: "1px solid #e0e0e0", paddingTop: "12px", display: "flex", justifyContent: "space-between" }}>
+          <span style={{ fontSize: "10px", color: "#ccc", letterSpacing: "0.1em" }}>翟正龙 · 摄影指导</span>
+          <span style={{ fontSize: "10px", color: "#ccc" }}>stark77zhai@gmail.com</span>
         </div>
 
       </div>
