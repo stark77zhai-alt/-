@@ -98,6 +98,11 @@ export default function Print() {
 
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "36px", marginBottom: "32px" }}>
             <div>
+              <img
+                src={`${base}about-photo.jpg`}
+                alt="翟正龙"
+                style={{ width: "100%", aspectRatio: "4/3", objectFit: "cover", display: "block", marginBottom: "12px" }}
+              />
               <p className="lbl">简介</p>
               <p style={{ fontSize: "12px", lineHeight: 1.85, color: "#444", margin: 0 }}>
                 翟正龙，摄影指导，出生于四川南充，成长于深圳。曾赴美国学习电影摄影两年。
