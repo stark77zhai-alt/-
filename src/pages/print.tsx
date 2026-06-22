@@ -107,7 +107,7 @@ export default function Print() {
             <div>
               <p className="lbl">所属机构</p>
               <p style={{ fontSize: "12px", lineHeight: 1.85, color: "#444", margin: "0 0 16px" }}>
-                美国摄影机操作者协会（SOC）<br />
+                掌机师协会（SOC）<br />
                 <span style={{ color: "#aaa" }}>学生会员</span>
               </p>
               <p className="lbl">联系方式</p>
@@ -135,7 +135,7 @@ export default function Print() {
                 <tr key={p.id}>
                   <td className="title">{p.title}</td>
                   <td className="dim">短片</td>
-                  <td className="dim">{p.format || "—"}</td>
+                  <td className="dim">{p.format || "Digital"}</td>
                   <td className="dim">{p.duration || "—"}</td>
                   <td className="dim" style={{ textAlign: "right" }}>{p.year}</td>
                 </tr>
@@ -157,7 +157,7 @@ export default function Print() {
                   <h2 style={{ fontSize: "26px", fontWeight: 600, letterSpacing: "0.06em", margin: 0 }}>{p.title}</h2>
                 </div>
                 <div style={{ textAlign: "right" }}>
-                  {p.format && <p style={{ fontSize: "11px", color: "#aaa", margin: "0 0 1px", letterSpacing: "0.1em" }}>{p.format}</p>}
+                  <p style={{ fontSize: "11px", color: "#aaa", margin: "0 0 1px", letterSpacing: "0.1em" }}>{p.format || "Digital"}</p>
                   {p.duration && <p style={{ fontSize: "11px", color: "#aaa", margin: "0 0 1px" }}>{p.duration}</p>}
                   <p style={{ fontSize: "14px", fontWeight: 600, margin: 0 }}>{p.year}</p>
                 </div>
