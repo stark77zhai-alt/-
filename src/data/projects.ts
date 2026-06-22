@@ -83,7 +83,7 @@ export const projects: Project[] = [
     location: "Los Angeles",
     role: "Director of Photography",
     type: "Short Film",
-    thumbnail: "unspoken-4.jpg",
+    thumbnail: "unspoken-3.jpg",
     stills: [
       "unspoken-1.jpg", "unspoken-2.jpg", "unspoken-3.jpg",
       "unspoken-4.jpg", "unspoken-5.jpg", "unspoken-6.jpg",

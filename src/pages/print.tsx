@@ -151,7 +151,7 @@ export default function Print() {
 
         {/* ── 每个项目单独一页 ── */}
         {projects.map(p => {
-          const cover = p.stills[0];
+          const cover = p.thumbnail;
           const stills = p.stills.slice(1, 13);
           return (
             <div key={p.id} className="page-break">
