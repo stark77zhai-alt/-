@@ -10,6 +10,7 @@ import WorkDetail from "@/pages/work-detail";
 import About from "@/pages/about";
 import Contact from "@/pages/contact";
 import Reel from "@/pages/reel";
+import Print from "@/pages/print";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +23,7 @@ function Router() {
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
       <Route path="/reel" component={Reel} />
+      <Route path="/print" component={Print} />
       <Route component={NotFound} />
     </Switch>
   );
