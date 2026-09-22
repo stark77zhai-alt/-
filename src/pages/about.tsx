@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import Footer from "@/components/Footer";
 
 const base = import.meta.env.BASE_URL;
+const ASC_ARTICLE_URL = "https://theasc.com/news/asc-student-heritage-award-nominees-2026/";
 
 export default function About() {
   return (
@@ -40,6 +41,30 @@ export default function About() {
           <p style={{ fontSize: "16px", fontWeight: 300, lineHeight: 1.85, color: "#666666", letterSpacing: "0.01em", marginBottom: "40px" }}>
             Telling stories through light and shadow.
           </p>
+          <div style={{ borderTop: "1px solid rgba(255,255,255,0.08)", paddingTop: "24px", marginBottom: "40px" }}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", gap: "20px", marginBottom: "16px" }}>
+              <p style={{ fontSize: "11px", fontWeight: 400, letterSpacing: "0.16em", textTransform: "uppercase", color: "#666666", margin: 0 }}>
+                Recognition
+              </p>
+              <span style={{ fontSize: "11px", color: "#555555", letterSpacing: "0.08em" }}>2026</span>
+            </div>
+            <p style={{ fontSize: "18px", fontWeight: 300, lineHeight: 1.5, color: "#C4C4C4", letterSpacing: "0.01em", margin: "0 0 8px" }}>
+              ASC Student Heritage Awards
+            </p>
+            <p style={{ fontSize: "13px", fontWeight: 300, lineHeight: 1.7, color: "#777777", margin: "0 0 18px" }}>
+              Tom Houghton, ASC Graduate Award nominee for <em>Under Grace</em>
+              <br />
+              New York Film Academy
+            </p>
+            <a
+              href={ASC_ARTICLE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ fontSize: "11px", fontWeight: 400, letterSpacing: "0.12em", textTransform: "uppercase", color: "#A0A0A0", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.2)", paddingBottom: "4px" }}
+            >
+              Read announcement ↗
+            </a>
+          </div>
           <div style={{ borderTop: "1px solid rgba(255,255,255,0.08)", paddingTop: "24px" }}>
             <p style={{ fontSize: "13px", fontWeight: 300, letterSpacing: "0.1em", textTransform: "uppercase", color: "#666666", lineHeight: 2 }}>
               Society of Camera Operators (SOC)
