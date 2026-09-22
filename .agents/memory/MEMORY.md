@@ -1,0 +1,1 @@
+- [Artifact workflow configuration](artifact-workflows.md) — keep the generated artifact workflow as the single dev server when the root project already owns the Vite app.

@@ -12,14 +12,14 @@ version = "1.0.0"
 [[services]]
 name = "web"
 paths = [ "/" ]
-localPort = 24826
+localPort = 5000
 
 [services.development]
-run = "pnpm --filter @workspace/portfolio-site run dev"
+run = "npm run dev"
 
 [services.production]
-build = [ "pnpm", "--filter", "@workspace/portfolio-site", "run", "build" ]
-publicDir = "artifacts/portfolio-site/dist/public"
+build = [ "npm", "run", "build" ]
+publicDir = "dist"
 serve = "static"
 
 [[services.production.rewrites]]
@@ -27,5 +27,5 @@ from = "/*"
 to = "/index.html"
 
 [services.env]
-PORT = "24826"
+PORT = "5000"
 BASE_PATH = "/"
