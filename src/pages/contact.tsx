@@ -37,7 +37,7 @@ export default function Contact() {
           </div>
           <div>
             <p style={{ fontSize: "12px", fontWeight: 400, letterSpacing: "0.14em", textTransform: "uppercase", color: "#666666", marginBottom: "8px" }}>Base</p>
-            <p style={{ fontSize: "17px", fontWeight: 300, color: "#A0A0A0", letterSpacing: "0.01em" }}>Shenzhen / Guangzhou</p>
+            <p style={{ fontSize: "17px", fontWeight: 300, color: "#A0A0A0", letterSpacing: "0.01em" }}>Shanghai / Shenzhen</p>
           </div>
         </div>
       </main>

@@ -4,7 +4,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
   const [isHome] = useRoute("/");
   const [isWorks] = useRoute("/works");
   const [isAbout] = useRoute("/about");
-  const [isContact] = useRoute("/contact");
 
   const navLinkClass = (isActive: boolean) => 
     `text-[11px] uppercase tracking-[0.15em] font-extralight transition-colors duration-500 hover:text-foreground ${isActive ? "text-foreground font-light border-b border-foreground/30 pb-1" : "text-muted"}`;
@@ -18,7 +17,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <div className="flex gap-6 md:gap-10">
           <Link href="/works" className={navLinkClass(isWorks)}>Works</Link>
           <Link href="/about" className={navLinkClass(isAbout)}>About</Link>
-          <Link href="/contact" className={navLinkClass(isContact)}>Contact</Link>
         </div>
       </nav>
       

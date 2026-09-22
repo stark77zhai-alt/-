@@ -119,7 +119,7 @@ export default function Print() {
               <p style={{ fontSize: "12px", lineHeight: 1.85, color: "#444", margin: 0 }}>
                 stark77zhai@gmail.com<br />
                 +86 185 9428 9284<br />
-                <span style={{ color: "#aaa" }}>深圳 / 广州</span>
+                <span style={{ color: "#aaa" }}>上海 / 深圳</span>
               </p>
             </div>
           </div>

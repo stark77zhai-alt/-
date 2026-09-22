@@ -35,7 +35,6 @@ export default function Reel() {
           {[
             { href: "/reel", label: "Reel", active: true },
             { href: "/about", label: "About", active: false },
-            { href: "/contact", label: "Contact", active: false },
           ].map(({ href, label, active }) => (
             <Link key={href} href={href} style={{
               fontSize: "12px", fontWeight: 400, letterSpacing: "0.2em",

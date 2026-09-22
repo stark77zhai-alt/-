@@ -22,7 +22,6 @@ export default function About() {
         <div style={{ display: "flex", gap: "36px", fontFamily: '"KaiTi", "楷体", "STKaiti", "AR PL UKai CN", serif' }}>
           <Link href="/reel" style={{ fontSize: "13px", fontWeight: 400, letterSpacing: "0.12em", textTransform: "uppercase", color: "#666666", textDecoration: "none" }} className="hover:text-[#EAEAEA] transition-colors duration-300">Reel</Link>
           <Link href="/about" style={{ fontSize: "13px", fontWeight: 400, letterSpacing: "0.12em", textTransform: "uppercase", color: "#EAEAEA", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.08)", paddingBottom: "2px" }}>About</Link>
-          <Link href="/contact" style={{ fontSize: "13px", fontWeight: 400, letterSpacing: "0.12em", textTransform: "uppercase", color: "#666666", textDecoration: "none" }} className="hover:text-[#EAEAEA] transition-colors duration-300">Contact</Link>
         </div>
       </nav>
 
@@ -47,6 +46,25 @@ export default function About() {
               <br />
               <span style={{ color: "#444444" }}>Student Member</span>
             </p>
+           <div style={{ marginTop: "32px" }}>
+             <p style={{ fontSize: "13px", fontWeight: 300, letterSpacing: "0.1em", textTransform: "uppercase", color: "#666666", marginBottom: "20px" }}>
+               Get in touch
+             </p>
+             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+               <div>
+                 <p style={{ fontSize: "11px", fontWeight: 400, letterSpacing: "0.14em", textTransform: "uppercase", color: "#555555", margin: "0 0 5px" }}>Email</p>
+                 <p style={{ fontSize: "15px", fontWeight: 300, color: "#A0A0A0", letterSpacing: "0.01em", margin: 0 }}>stark77zhai@gmail.com</p>
+               </div>
+               <div>
+                 <p style={{ fontSize: "11px", fontWeight: 400, letterSpacing: "0.14em", textTransform: "uppercase", color: "#555555", margin: "0 0 5px" }}>Phone</p>
+                 <p style={{ fontSize: "15px", fontWeight: 300, color: "#A0A0A0", letterSpacing: "0.01em", margin: 0 }}>+86 185 9428 9284</p>
+               </div>
+               <div>
+                 <p style={{ fontSize: "11px", fontWeight: 400, letterSpacing: "0.14em", textTransform: "uppercase", color: "#555555", margin: "0 0 5px" }}>Base</p>
+                 <p style={{ fontSize: "15px", fontWeight: 300, color: "#A0A0A0", letterSpacing: "0.01em", margin: 0 }}>Shanghai / Shenzhen</p>
+               </div>
+             </div>
+           </div>
           </div>
         </div>
         <div>

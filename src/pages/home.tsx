@@ -35,9 +35,6 @@ export default function Home() {
           <Link href="/about" style={{ fontSize: "15px", fontWeight: 400, letterSpacing: "0.12em", textTransform: "uppercase", color: "#666666", textDecoration: "none", transition: "color 0.4s ease" }}
             onMouseEnter={e => (e.currentTarget as HTMLElement).style.color = "#EAEAEA"}
             onMouseLeave={e => (e.currentTarget as HTMLElement).style.color = "#666666"}>About</Link>
-          <Link href="/contact" style={{ fontSize: "15px", fontWeight: 400, letterSpacing: "0.12em", textTransform: "uppercase", color: "#666666", textDecoration: "none", transition: "color 0.4s ease" }}
-            onMouseEnter={e => (e.currentTarget as HTMLElement).style.color = "#EAEAEA"}
-            onMouseLeave={e => (e.currentTarget as HTMLElement).style.color = "#666666"}>Contact</Link>
         </div>
       </nav>
 
