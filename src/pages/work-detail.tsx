@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import { useState, useEffect, useCallback } from "react";
 
 const base = import.meta.env.BASE_URL;
+const ASC_ARTICLE_URL = "https://theasc.com/news/asc-student-heritage-award-nominees-2026/";
 
 export default function WorkDetail() {
   const params = useParams();
@@ -79,6 +80,35 @@ export default function WorkDetail() {
           style={{ width: "100%", height: "auto", display: "block" }}
         />
       </div>
+
+      {project.id === "under-grace" && (
+        <section className="detail-recognition" aria-label="Recognition">
+          <div>
+            <div style={{ display: "flex", alignItems: "baseline", gap: "16px", marginBottom: "12px" }}>
+              <p style={{ fontSize: "10px", fontWeight: 400, letterSpacing: "0.18em", textTransform: "uppercase", color: "#666666", margin: 0 }}>
+                Recognition
+              </p>
+              <span style={{ fontSize: "10px", color: "#555555", letterSpacing: "0.1em" }}>2026</span>
+            </div>
+            <h1 style={{ fontSize: "24px", fontWeight: 300, letterSpacing: "0.08em", color: "#C4C4C4", margin: "0 0 10px" }}>
+              UNDER GRACE
+            </h1>
+            <p style={{ fontSize: "13px", fontWeight: 300, lineHeight: 1.7, color: "#777777", margin: 0 }}>
+              ASC Student Heritage Awards · Tom Houghton, ASC Graduate Award nominee
+              <br />
+              New York Film Academy
+            </p>
+          </div>
+          <a
+            href={ASC_ARTICLE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ flexShrink: 0, fontSize: "10px", fontWeight: 400, letterSpacing: "0.14em", textTransform: "uppercase", color: "#A0A0A0", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.2)", paddingBottom: "5px" }}
+          >
+            Official announcement ↗
+          </a>
+        </section>
+      )}
 
       {/* Stills grid — 3 columns */}
       <div className="detail-stills">
