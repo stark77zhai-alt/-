@@ -102,12 +102,12 @@ export const projects: Project[] = [
     location: "Los Angeles",
     role: "Director of Photography",
     type: "Short Film",
-    thumbnail: "echo-13.png",
+    thumbnail: "echo-13.webp",
     stills: [
-      "echo-1.png", "echo-2.png", "echo-3.png",
-      "echo-4.png", "echo-5.png", "echo-6.png",
-      "echo-7.png", "echo-8.png", "echo-9.png",
-      "echo-10.png", "echo-11.png", "echo-12.png", "echo-13.png"
+      "echo-1.webp", "echo-2.webp", "echo-3.webp",
+      "echo-4.webp", "echo-5.webp", "echo-6.webp",
+      "echo-7.webp", "echo-8.webp", "echo-9.webp",
+      "echo-10.webp", "echo-11.webp", "echo-12.webp", "echo-13.webp"
     ],
     synopsis: "A short film navigating memory and space."
   },
@@ -120,8 +120,8 @@ export const projects: Project[] = [
     location: "Los Angeles",
     role: "Director of Photography",
     type: "Short Film",
-    thumbnail: "small-world-1.png",
-    stills: ["small-world-1.png", "small-world-2.png", "small-world-3.png", "small-world-4.png"],
+    thumbnail: "small-world-1.webp",
+    stills: ["small-world-1.webp", "small-world-2.webp", "small-world-3.webp", "small-world-4.webp"],
     synopsis: "Shot on 16mm film."
   }
 ];

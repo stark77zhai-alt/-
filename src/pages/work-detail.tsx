@@ -77,6 +77,8 @@ export default function WorkDetail() {
         <img
           src={`${base}${hero}`}
           alt={project.title}
+          loading="eager"
+          decoding="async"
           style={{ width: "100%", height: "auto", display: "block" }}
         />
       </div>
@@ -121,6 +123,8 @@ export default function WorkDetail() {
                   key={j}
                   src={`${base}${src}`}
                   alt=""
+                  loading="lazy"
+                  decoding="async"
                   onClick={() => setLightbox(idx)}
                   style={{
                     width: "100%", display: "block", objectFit: "cover",

@@ -47,7 +47,7 @@ export default function Home() {
       {/* Works grid */}
       <main className="works-main" style={{ maxWidth: "1280px", margin: "0 auto", padding: "100px 48px 80px" }}>
         <div className="works-grid">
-          {projects.map((project) => (
+          {projects.map((project, index) => (
             <Link key={project.id} href={`/works/${project.id}`} style={{ textDecoration: "none", display: "block", color: "inherit" }}>
               <div className="group" style={{ cursor: "pointer" }}>
                 {/* Image */}
@@ -69,6 +69,8 @@ export default function Home() {
                   <img
                     src={`${base}${project.thumbnail}`}
                     alt={project.title}
+                    loading={index < 2 ? "eager" : "lazy"}
+                    decoding="async"
                     style={{
                       width: "100%",
                       height: "100%",
