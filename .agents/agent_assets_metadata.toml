@@ -1,0 +1,16 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "ZBdsrLFc9SKnwRvu2xaqJ"
+uri = "file://portfolio-zhenlong-2026.pdf"
+type = "pdf"
+title = "翟正龙 — Portfolio 2026"
+description = "A4 作品集 PDF，共 7 页，包含个人简介、联系方式、美国电影摄影师协会传承奖 / ASC Student Heritage Awards，以及作品目录和项目剧照。"
+logical_id = "18f4cbff-030f-4984-ad97-854e187fc8f6"
+content_hash = "sha256:3faf1fb7428385b30735b2001c96bc81faba619c7e932108d1ac25460affa513"
+size = 50834878
+mtime_ms = 1790170385960
+storage_uri = "gcs://replit-rams-assets-janeway/rams/assets/repl:a7914d34-d6f2-48d0-80dd-c46cba4217cb/18f4cbff-030f-4984-ad97-854e187fc8f6/6f1d1f7d-6f96-4799-bc5d-b3d083a2c8ff"
+storage_version_token = "1790170411013508"
+content_type = "application/pdf"
