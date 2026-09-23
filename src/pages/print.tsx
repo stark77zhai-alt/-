@@ -39,7 +39,7 @@ export default function Print() {
           font-size: 12px; color: #444;
           padding: 8px 0; border-bottom: 1px solid #eee; vertical-align: middle;
         }
-        .works-table td.title { font-weight: 600; color: #111; letter-spacing: 0.03em; }
+        .works-table td.title { font-weight: 400; color: #111; letter-spacing: 0.03em; }
         .works-table td.dim { color: #999; font-size: 11px; }
 
         .project-cover {
@@ -84,15 +84,17 @@ export default function Print() {
         {/* ── 第一页：封面 + 简介 + 作品目录 ── */}
         <div>
           <div style={{ marginBottom: "28px" }}>
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end" }}>
-              <h1 style={{ fontSize: "38px", fontWeight: 600, letterSpacing: "0.06em", margin: 0 }}>翟正龙</h1>
-              <span style={{ fontSize: "12px", color: "#aaa", letterSpacing: "0.08em" }}>ZHAI ZHENGLONG</span>
-            </div>
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", borderBottom: "2px solid #111", paddingBottom: "10px", marginTop: "4px" }}>
-              <span style={{ fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", color: "#666", fontFamily: '"KaiTi","楷体","STKaiti",serif' }}>
-                摄影指导 · Director of Photography
-              </span>
-              <span style={{ fontSize: "11px", color: "#aaa" }}>2026</span>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", paddingBottom: "10px" }}>
+              <div style={{ display: "flex", alignItems: "baseline", gap: "20px" }}>
+                <h1 style={{ fontSize: "38px", fontWeight: 400, letterSpacing: "0.06em", margin: 0 }}>翟正龙</h1>
+                <span style={{ fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", color: "#666", fontFamily: '"KaiTi","楷体","STKaiti",serif' }}>
+                  摄影指导 · Director of Photography
+                </span>
+              </div>
+              <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: "3px" }}>
+                <span style={{ fontSize: "12px", color: "#aaa", letterSpacing: "0.08em" }}>ZHAI ZHENGLONG</span>
+                <span style={{ fontSize: "11px", color: "#aaa" }}>2026</span>
+              </div>
             </div>
           </div>
 
@@ -112,8 +114,7 @@ export default function Print() {
             <div>
               <p className="lbl">所属机构</p>
               <p style={{ fontSize: "12px", lineHeight: 1.85, color: "#444", margin: "0 0 16px" }}>
-                掌机师协会（SOC）<br />
-                <span style={{ color: "#aaa" }}>学生会员</span>
+                 电影摄影师协会（SOC）
               </p>
               <p className="lbl">联系方式</p>
               <p style={{ fontSize: "12px", lineHeight: 1.85, color: "#444", margin: 0 }}>
@@ -123,7 +124,7 @@ export default function Print() {
               </p>
               <div style={{ borderTop: "1px solid #e0e0e0", marginTop: "20px", paddingTop: "14px" }}>
                 <p className="lbl">奖项 / Awards</p>
-                <p style={{ fontSize: "12px", lineHeight: 1.7, color: "#111", margin: "0 0 4px", fontWeight: 600 }}>
+                <p style={{ fontSize: "12px", lineHeight: 1.7, color: "#111", margin: "0 0 4px", fontWeight: 400 }}>
                   美国电影摄影师协会传承奖
                 </p>
                 <p style={{ fontSize: "11px", lineHeight: 1.7, color: "#666", margin: 0 }}>
@@ -169,12 +170,12 @@ export default function Print() {
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: "8px" }}>
                 <div>
                   <p className="lbl" style={{ marginBottom: "3px" }}>短片 · 摄影指导</p>
-                  <h2 style={{ fontSize: "26px", fontWeight: 600, letterSpacing: "0.06em", margin: 0 }}>{p.title}</h2>
+                  <h2 style={{ fontSize: "26px", fontWeight: 400, letterSpacing: "0.06em", margin: 0 }}>{p.title}</h2>
                 </div>
                 <div style={{ textAlign: "right" }}>
                   <p style={{ fontSize: "11px", color: "#aaa", margin: "0 0 1px", letterSpacing: "0.1em" }}>{p.format || "Digital"}</p>
                   {p.duration && <p style={{ fontSize: "11px", color: "#aaa", margin: "0 0 1px" }}>{p.duration}</p>}
-                  <p style={{ fontSize: "14px", fontWeight: 600, margin: 0 }}>{p.year}</p>
+                  <p style={{ fontSize: "14px", fontWeight: 400, margin: 0 }}>{p.year}</p>
                 </div>
               </div>
 
