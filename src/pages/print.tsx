@@ -4,7 +4,7 @@ const base = import.meta.env.BASE_URL;
 
 export default function Print() {
   return (
-    <div style={{ background: "#fff", color: "#111", fontFamily: "'Space Grotesk', system-ui, sans-serif" }}>
+    <div style={{ background: "#fff", color: "#111", fontFamily: "'Noto Sans SC', 'Microsoft YaHei', 'PingFang SC', 'Ma Shan Zheng', system-ui, sans-serif" }}>
 
       <style>{`
         * { box-sizing: border-box; }
@@ -121,6 +121,16 @@ export default function Print() {
                 +86 185 9428 9284<br />
                 <span style={{ color: "#aaa" }}>上海 / 深圳</span>
               </p>
+              <div style={{ borderTop: "1px solid #e0e0e0", marginTop: "20px", paddingTop: "14px" }}>
+                <p className="lbl">奖项 / Awards</p>
+                <p style={{ fontSize: "12px", lineHeight: 1.7, color: "#111", margin: "0 0 4px", fontWeight: 600 }}>
+                  美国电影摄影师协会传承奖
+                </p>
+                <p style={{ fontSize: "11px", lineHeight: 1.7, color: "#666", margin: 0 }}>
+                  ASC Student Heritage Awards<br />
+                  2026 提名 / Nominee
+                </p>
+              </div>
             </div>
           </div>
 
