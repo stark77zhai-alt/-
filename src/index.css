@@ -100,52 +100,6 @@ h1, h2, h3, h4, h5, h6 {
   align-items: start;
 }
 
-.about-portrait-frame {
-  position: relative;
-  isolation: isolate;
-  padding: 8px;
-  background: linear-gradient(145deg, #3a3a3a 0%, #1a1a1a 38%, #080808 100%);
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  box-shadow:
-    inset 1px 1px 0 rgba(255, 255, 255, 0.14),
-    inset -1px -1px 0 rgba(0, 0, 0, 0.75),
-    12px 14px 0 -5px #151515,
-    20px 24px 28px rgba(0, 0, 0, 0.48);
-  transform: perspective(1200px) rotateY(-2deg) rotateX(0.8deg);
-  transform-origin: center;
-  transition: transform 500ms ease, box-shadow 500ms ease;
-}
-
-.about-portrait-frame::before {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  inset: 8px;
-  pointer-events: none;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow:
-    inset 10px 10px 20px rgba(255, 255, 255, 0.06),
-    inset -12px -14px 22px rgba(0, 0, 0, 0.28);
-}
-
-.about-portrait-frame::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  inset: 12px -14px -14px 12px;
-  background: linear-gradient(145deg, #242424, #090909 72%);
-  clip-path: polygon(0 0, 100% 0, 100% 88%, 88% 100%, 0 100%);
-}
-
-.about-portrait-frame:hover {
-  transform: perspective(1200px) rotateY(0deg) rotateX(0deg) translateY(-3px);
-  box-shadow:
-    inset 1px 1px 0 rgba(255, 255, 255, 0.18),
-    inset -1px -1px 0 rgba(0, 0, 0, 0.75),
-    12px 14px 0 -5px #151515,
-    22px 28px 34px rgba(0, 0, 0, 0.56);
-}
-
 /* Work detail stills grid */
 .detail-stills {
   padding: 32px 60px 0;
@@ -248,15 +202,6 @@ h1, h2, h3, h4, h5, h6 {
     grid-template-columns: 1fr;
     padding: 90px 20px 60px;
     gap: 40px;
-  }
-
-  .about-portrait-frame {
-    margin-right: 8px;
-    transform: none;
-  }
-
-  .about-portrait-frame:hover {
-    transform: translateY(-2px);
   }
 
   /* Work detail */

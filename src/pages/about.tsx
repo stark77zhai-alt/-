@@ -92,11 +92,11 @@ export default function About() {
            </div>
           </div>
         </div>
-        <div className="about-portrait-frame">
+        <div>
           <img
             src={`${base}about-photo.jpg`}
             alt="Zhai Zhenglong filming on location"
-            style={{ width: "100%", display: "block" }}
+            style={{ width: "100%", display: "block", borderRadius: "4px" }}
           />
         </div>
       </main>
