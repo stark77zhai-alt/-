@@ -6,23 +6,24 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --color-background: #fafaf8;
-  --color-foreground: #161616;
-  --color-muted: #a0a0a0;
+  --color-background: #ffffff;
+  --color-foreground: #282824;
+  --color-muted: #77756f;
   --font-sans: 'Inter', sans-serif;
 }
 
 :root {
-  --bg-main: #0B0B0B;
-  --bg-soft: #111111;
-  --text-primary: #EAEAEA;
-  --text-secondary: #A0A0A0;
-  --text-tertiary: #666666;
-  --hover-overlay: rgba(255, 255, 255, 0.05);
-  --border-subtle: rgba(255,255,255,0.08);
-  --background: #0B0B0B;
-  --foreground: #EAEAEA;
-  --muted: #A0A0A0;
+  color-scheme: light;
+  --bg-main: #ffffff;
+  --bg-soft: #f7f6f3;
+  --text-primary: #282824;
+  --text-secondary: #5a5954;
+  --text-tertiary: #77756f;
+  --hover-overlay: rgba(39, 38, 35, 0.025);
+  --border-subtle: rgba(39, 38, 35, 0.1);
+  --background: #ffffff;
+  --foreground: #282824;
+  --muted: #77756f;
 }
 
 body {
@@ -47,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: #EAEAEA;
+  color: #282824;
   margin: 0 0 10px;
   animation: fadeInUp 0.8s ease forwards;
   opacity: 0;
@@ -59,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   letter-spacing: 0.28em;
   text-transform: uppercase;
-  color: #A0A0A0;
+  color: #77756F;
   margin: 0 0 6px;
   animation: fadeInUp 0.8s ease forwards;
   opacity: 0;
@@ -70,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: clamp(11px, 1vw, 12px);
   font-weight: 300;
   letter-spacing: 0.14em;
-  color: #666666;
+  color: #77756F;
   margin: 0;
   animation: fadeInUp 0.8s ease forwards;
   opacity: 0;
@@ -111,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
 .detail-recognition {
   margin: 0 60px;
   padding: 32px 0 28px;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid var(--border-subtle);
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -189,10 +190,10 @@ h1, h2, h3, h4, h5, h6 {
     right: 0;
     text-align: center;
     font-weight: 400;
-    color: #444444;
+    color: #77756F;
     z-index: 49;
     pointer-events: none;
-    background: rgba(11,11,11,0.92);
+    background: rgba(255,255,255,0.92);
     padding: 4px 0 5px;
     backdrop-filter: blur(8px);
   }

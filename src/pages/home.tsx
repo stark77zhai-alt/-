@@ -6,7 +6,7 @@ const base = import.meta.env.BASE_URL;
 
 export default function Home() {
   return (
-    <div className="min-h-screen" style={{ fontFamily: "'Space Grotesk', system-ui, sans-serif", background: "#0B0B0B", color: "#EAEAEA" }}>
+    <div className="min-h-screen" style={{ fontFamily: "'Space Grotesk', system-ui, sans-serif", background: "#FFFFFF", color: "#282824" }}>
 
       {/* Nav */}
       <nav className="nav-bar" style={{
@@ -17,31 +17,31 @@ export default function Home() {
         alignItems: "center",
         padding: "28px 48px",
         zIndex: 50,
-        background: "rgba(11,11,11,0.92)",
+        background: "rgba(255,255,255,0.92)",
         backdropFilter: "blur(8px)",
         fontFamily: "'Space Grotesk', system-ui, sans-serif",
       }}>
-        <span className="nav-logo" style={{ fontSize: "22px", fontWeight: 500, letterSpacing: "0.04em", color: "#EAEAEA" }}>
+        <span className="nav-logo" style={{ fontSize: "22px", fontWeight: 500, letterSpacing: "0.04em", color: "#282824" }}>
           ZHAI
         </span>
         <span className="nav-center">
-          <span style={{ fontSize: "13px", fontWeight: 400, letterSpacing: "0.18em", textTransform: "uppercase", color: "#666666", fontFamily: '"KaiTi", "楷体", "STKaiti", "AR PL UKai CN", serif' }}>Cinematographer</span>
-          <span style={{ fontSize: "11px", fontWeight: 400, letterSpacing: "0.1em", color: "#666666", fontFamily: '"Ma Shan Zheng", "KaiTi", "楷体", serif' }}>观察自然</span>
+          <span style={{ fontSize: "13px", fontWeight: 400, letterSpacing: "0.18em", textTransform: "uppercase", color: "#77756F", fontFamily: '"KaiTi", "楷体", "STKaiti", "AR PL UKai CN", serif' }}>Cinematographer</span>
+          <span style={{ fontSize: "11px", fontWeight: 400, letterSpacing: "0.1em", color: "#77756F", fontFamily: '"Ma Shan Zheng", "KaiTi", "楷体", serif' }}>观察自然</span>
         </span>
         <div style={{ display: "flex", gap: "36px", fontFamily: '"KaiTi", "楷体", "STKaiti", "AR PL UKai CN", serif' }}>
-          <Link href="/reel" style={{ fontSize: "15px", fontWeight: 400, letterSpacing: "0.12em", textTransform: "uppercase", color: "#666666", textDecoration: "none", transition: "color 0.4s ease" }}
-            onMouseEnter={e => (e.currentTarget as HTMLElement).style.color = "#EAEAEA"}
-            onMouseLeave={e => (e.currentTarget as HTMLElement).style.color = "#666666"}>Reel</Link>
-          <Link href="/about" style={{ fontSize: "15px", fontWeight: 400, letterSpacing: "0.12em", textTransform: "uppercase", color: "#666666", textDecoration: "none", transition: "color 0.4s ease" }}
-            onMouseEnter={e => (e.currentTarget as HTMLElement).style.color = "#EAEAEA"}
-            onMouseLeave={e => (e.currentTarget as HTMLElement).style.color = "#666666"}>About</Link>
+          <Link href="/reel" style={{ fontSize: "15px", fontWeight: 400, letterSpacing: "0.12em", textTransform: "uppercase", color: "#77756F", textDecoration: "none", transition: "color 0.4s ease" }}
+            onMouseEnter={e => (e.currentTarget as HTMLElement).style.color = "#282824"}
+            onMouseLeave={e => (e.currentTarget as HTMLElement).style.color = "#77756F"}>Reel</Link>
+          <Link href="/about" style={{ fontSize: "15px", fontWeight: 400, letterSpacing: "0.12em", textTransform: "uppercase", color: "#77756F", textDecoration: "none", transition: "color 0.4s ease" }}
+            onMouseEnter={e => (e.currentTarget as HTMLElement).style.color = "#282824"}
+            onMouseLeave={e => (e.currentTarget as HTMLElement).style.color = "#77756F"}>About</Link>
         </div>
       </nav>
 
       {/* Mobile tagline — below nav */}
       <div className="nav-tagline-mobile" style={{ lineHeight: 1.5 }}>
-        <span style={{ display: "block", fontSize: "9px", letterSpacing: "0.18em", textTransform: "uppercase", color: "#555555", fontFamily: '"KaiTi", "楷体", "STKaiti", "AR PL UKai CN", serif' }}>Cinematographer</span>
-        <span style={{ display: "block", fontSize: "9px", letterSpacing: "0.1em", color: "#555555", fontFamily: '"Ma Shan Zheng", "KaiTi", "楷体", serif' }}>观察自然</span>
+        <span style={{ display: "block", fontSize: "9px", letterSpacing: "0.18em", textTransform: "uppercase", color: "#77756F", fontFamily: '"KaiTi", "楷体", "STKaiti", "AR PL UKai CN", serif' }}>Cinematographer</span>
+        <span style={{ display: "block", fontSize: "9px", letterSpacing: "0.1em", color: "#77756F", fontFamily: '"Ma Shan Zheng", "KaiTi", "楷体", serif' }}>观察自然</span>
       </div>
 
       {/* Works grid */}
@@ -52,7 +52,7 @@ export default function Home() {
               <div className="group" style={{ cursor: "pointer" }}>
                 {/* Image */}
                 <div
-                  style={{ position: "relative", overflow: "hidden", aspectRatio: "16/9", background: "#0B0B0B", borderRadius: "6px" }}
+                  style={{ position: "relative", overflow: "hidden", aspectRatio: "16/9", background: "#F2F1EE", borderRadius: "6px" }}
                   onMouseEnter={e => {
                     const img = (e.currentTarget as HTMLDivElement).querySelector("img") as HTMLImageElement;
                     if (img) img.style.transform = "scale(1.03)";
@@ -91,13 +91,13 @@ export default function Home() {
                 {/* Info */}
                 <div style={{ marginTop: "16px", display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
                   <div style={{ display: "flex", gap: "12px", alignItems: "baseline" }}>
-                    <p style={{ fontSize: "13px", fontWeight: 300, color: "#666666", letterSpacing: "0.06em", margin: 0 }}>{project.type}</p>
-                    <p style={{ fontSize: "13px", fontWeight: 300, color: "#A0A0A0", letterSpacing: "0.06em", margin: 0 }}>{project.title}</p>
+                    <p style={{ fontSize: "13px", fontWeight: 300, color: "#77756F", letterSpacing: "0.06em", margin: 0 }}>{project.type}</p>
+                    <p style={{ fontSize: "13px", fontWeight: 300, color: "#282824", letterSpacing: "0.06em", margin: 0 }}>{project.title}</p>
                     {project.format && (
-                      <p style={{ fontSize: "11px", fontWeight: 300, color: "#555555", letterSpacing: "0.12em", margin: 0 }}>{project.format}</p>
+                      <p style={{ fontSize: "11px", fontWeight: 300, color: "#9B9992", letterSpacing: "0.12em", margin: 0 }}>{project.format}</p>
                     )}
                   </div>
-                  <p style={{ fontSize: "13px", fontWeight: 300, color: "#A0A0A0", letterSpacing: "0.06em", margin: 0 }}>{project.year}</p>
+                  <p style={{ fontSize: "13px", fontWeight: 300, color: "#77756F", letterSpacing: "0.06em", margin: 0 }}>{project.year}</p>
                 </div>
               </div>
             </Link>

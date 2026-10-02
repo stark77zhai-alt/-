@@ -8,7 +8,7 @@ export default function Footer() {
       alignItems: "center",
       gap: "28px",
       padding: "40px 0 48px",
-      borderTop: "1px solid rgba(255,255,255,0.08)",
+      borderTop: "1px solid rgba(39,38,35,0.1)",
     }}>
       {/* Instagram */}
       <a
@@ -16,9 +16,9 @@ export default function Footer() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Instagram"
-        style={{ color: "#666666", transition: "color 0.3s ease", display: "flex" }}
-        onMouseEnter={e => (e.currentTarget as HTMLAnchorElement).style.color = "#EAEAEA"}
-        onMouseLeave={e => (e.currentTarget as HTMLAnchorElement).style.color = "#666666"}
+        style={{ color: "#77756F", transition: "color 0.3s ease", display: "flex" }}
+        onMouseEnter={e => (e.currentTarget as HTMLAnchorElement).style.color = "#282824"}
+        onMouseLeave={e => (e.currentTarget as HTMLAnchorElement).style.color = "#77756F"}
       >
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
           <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
@@ -33,9 +33,9 @@ export default function Footer() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="IMDb"
-        style={{ color: "#666666", transition: "color 0.3s ease", display: "flex", alignItems: "center" }}
-        onMouseEnter={e => (e.currentTarget as HTMLAnchorElement).style.color = "#EAEAEA"}
-        onMouseLeave={e => (e.currentTarget as HTMLAnchorElement).style.color = "#666666"}
+        style={{ color: "#77756F", transition: "color 0.3s ease", display: "flex", alignItems: "center" }}
+        onMouseEnter={e => (e.currentTarget as HTMLAnchorElement).style.color = "#282824"}
+        onMouseLeave={e => (e.currentTarget as HTMLAnchorElement).style.color = "#77756F"}
       >
         <svg width="22" height="20" viewBox="0 0 64 32" fill="currentColor">
           <rect x="0" y="0" width="64" height="32" rx="4" fill="currentColor" opacity="0.15"/>

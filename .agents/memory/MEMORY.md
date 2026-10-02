@@ -1,2 +1,3 @@
 - [Artifact workflow configuration](artifact-workflows.md) — keep the generated artifact workflow as the single dev server when the root project already owns the Vite app.
 - [GitHub-linked Vercel deployment](github-vercel-deployment.md) — production updates are triggered by pushing the connected GitHub main branch.
+- [Portfolio light theme](portfolio-theme.md) — use a white canvas and dark type across pages while preserving the original photography.

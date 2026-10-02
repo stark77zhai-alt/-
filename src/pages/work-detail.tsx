@@ -50,7 +50,7 @@ export default function WorkDetail() {
   }
 
   return (
-    <div style={{ fontFamily: "'Space Grotesk', system-ui, sans-serif", background: "#0B0B0B", color: "#EAEAEA", minHeight: "100vh" }}>
+    <div style={{ fontFamily: "'Space Grotesk', system-ui, sans-serif", background: "#FFFFFF", color: "#282824", minHeight: "100vh" }}>
 
       {/* Nav */}
       <nav className="nav-bar" style={{
@@ -61,14 +61,15 @@ export default function WorkDetail() {
         alignItems: "center",
         padding: "28px 48px",
         zIndex: 50,
-        background: "rgba(11,11,11,0)",
+        background: "rgba(255,255,255,0.92)",
+        backdropFilter: "blur(8px)",
       }}>
-        <Link href="/" style={{ fontSize: "17px", fontWeight: 500, letterSpacing: "0.04em", color: "#EAEAEA", textDecoration: "none" }}>
+        <Link href="/" style={{ fontSize: "17px", fontWeight: 500, letterSpacing: "0.04em", color: "#282824", textDecoration: "none" }}>
           ZHAI
         </Link>
         <div style={{ display: "flex", gap: "36px", fontFamily: '"KaiTi", "楷体", "STKaiti", "AR PL UKai CN", serif' }}>
-          <Link href="/reel" style={{ fontSize: "13px", fontWeight: 400, letterSpacing: "0.12em", textTransform: "uppercase", color: "#666666", textDecoration: "none" }} className="hover:text-[#EAEAEA] transition-colors duration-300">Reel</Link>
-          <Link href="/about" style={{ fontSize: "13px", fontWeight: 400, letterSpacing: "0.12em", textTransform: "uppercase", color: "#666666", textDecoration: "none" }} className="hover:text-[#EAEAEA] transition-colors duration-300">About</Link>
+          <Link href="/reel" style={{ fontSize: "13px", fontWeight: 400, letterSpacing: "0.12em", textTransform: "uppercase", color: "#77756F", textDecoration: "none" }} className="hover:text-[#282824] transition-colors duration-300">Reel</Link>
+          <Link href="/about" style={{ fontSize: "13px", fontWeight: 400, letterSpacing: "0.12em", textTransform: "uppercase", color: "#77756F", textDecoration: "none" }} className="hover:text-[#282824] transition-colors duration-300">About</Link>
         </div>
       </nav>
 
@@ -87,15 +88,15 @@ export default function WorkDetail() {
         <section className="detail-recognition" aria-label="Recognition">
           <div>
             <div style={{ display: "flex", alignItems: "baseline", gap: "16px", marginBottom: "12px" }}>
-              <p style={{ fontSize: "10px", fontWeight: 400, letterSpacing: "0.18em", textTransform: "uppercase", color: "#666666", margin: 0 }}>
+              <p style={{ fontSize: "10px", fontWeight: 400, letterSpacing: "0.18em", textTransform: "uppercase", color: "#77756F", margin: 0 }}>
                 Recognition
               </p>
-              <span style={{ fontSize: "10px", color: "#555555", letterSpacing: "0.1em" }}>2026</span>
+              <span style={{ fontSize: "10px", color: "#9B9992", letterSpacing: "0.1em" }}>2026</span>
             </div>
-            <h1 style={{ fontSize: "24px", fontWeight: 300, letterSpacing: "0.08em", color: "#C4C4C4", margin: "0 0 10px" }}>
+            <h1 style={{ fontSize: "24px", fontWeight: 300, letterSpacing: "0.08em", color: "#282824", margin: "0 0 10px" }}>
               UNDER GRACE
             </h1>
-            <p style={{ fontSize: "13px", fontWeight: 300, lineHeight: 1.7, color: "#777777", margin: 0 }}>
+            <p style={{ fontSize: "13px", fontWeight: 300, lineHeight: 1.7, color: "#5A5954", margin: 0 }}>
               ASC Student Heritage Awards · Tom Houghton, ASC Graduate Award nominee
               <br />
               New York Film Academy
@@ -105,7 +106,7 @@ export default function WorkDetail() {
             href={ASC_ARTICLE_URL}
             target="_blank"
             rel="noopener noreferrer"
-            style={{ flexShrink: 0, fontSize: "10px", fontWeight: 400, letterSpacing: "0.14em", textTransform: "uppercase", color: "#A0A0A0", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.2)", paddingBottom: "5px" }}
+            style={{ flexShrink: 0, fontSize: "10px", fontWeight: 400, letterSpacing: "0.14em", textTransform: "uppercase", color: "#5A5954", textDecoration: "none", borderBottom: "1px solid rgba(39,38,35,0.2)", paddingBottom: "5px" }}
           >
             Official announcement ↗
           </a>
@@ -141,8 +142,8 @@ export default function WorkDetail() {
 
       {/* Back link */}
       <div className="detail-back">
-        <Link href="/" style={{ fontSize: "11px", fontWeight: 400, letterSpacing: "0.2em", textTransform: "uppercase", color: "#444", textDecoration: "none" }}
-          className="hover:text-[#e8e4df] transition-colors duration-300">
+        <Link href="/" style={{ fontSize: "11px", fontWeight: 400, letterSpacing: "0.2em", textTransform: "uppercase", color: "#77756F", textDecoration: "none" }}
+          className="hover:text-[#282824] transition-colors duration-300">
           ← All Works
         </Link>
       </div>
@@ -219,7 +220,7 @@ export default function WorkDetail() {
           {/* Counter */}
           <div style={{
             position: "absolute", bottom: "24px", left: "50%", transform: "translateX(-50%)",
-            fontSize: "11px", letterSpacing: "0.2em", color: "#444",
+            fontSize: "11px", letterSpacing: "0.2em", color: "#9B9992",
           }}>
             {lightbox + 1} / {rest.length}
           </div>
