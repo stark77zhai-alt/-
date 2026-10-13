@@ -14,3 +14,17 @@ mtime_ms = 1790170713173
 storage_uri = "gcs://replit-rams-assets-janeway/rams/assets/repl:a7914d34-d6f2-48d0-80dd-c46cba4217cb/18f4cbff-030f-4984-ad97-854e187fc8f6/d12859af-43ed-4be3-8f6f-3488daf96eb6"
 storage_version_token = "1790170727783172"
 content_type = "application/pdf"
+
+[[outputs]]
+id = "poS5epQTVrn4rlQMILP9z"
+uri = "file://generated-artifacts/portfolio-zhenlong-2026-updated.pdf"
+type = "pdf"
+title = "翟正龙作品集 2026（获奖版）"
+description = "A4 PDF，共 7 页。页眉采用 Cinematographer 参考样式，移除作品目录，并明确标注 Under Grace 获得 2026 ASC Student Heritage Awards 的 Tom Houghton, ASC Graduate Award。"
+logical_id = "1777e92c-2e40-4782-8c25-f657d313594c"
+content_hash = "sha256:7e995cd2f674c90ff37cfaec59766f470a0371bbb01ef17a6aea33c5abc99e15"
+size = 50771240
+mtime_ms = 1791866726869
+storage_uri = "gcs://replit-rams-assets-janeway/rams/assets/repl:a7914d34-d6f2-48d0-80dd-c46cba4217cb/1777e92c-2e40-4782-8c25-f657d313594c/74dea2f3-51f4-4f1a-a365-929fc0f8e47e"
+storage_version_token = "1791866872578880"
+content_type = "application/pdf"

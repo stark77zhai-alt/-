@@ -29,19 +29,6 @@ export default function Print() {
           margin-bottom: 6px;
         }
 
-        .works-table { width: 100%; border-collapse: collapse; }
-        .works-table th {
-          text-align: left; font-size: 9px; letter-spacing: 0.12em;
-          text-transform: uppercase; color: #bbb; font-weight: 400;
-          padding-bottom: 7px; border-bottom: 1px solid #e0e0e0;
-        }
-        .works-table td {
-          font-size: 12px; color: #444;
-          padding: 8px 0; border-bottom: 1px solid #eee; vertical-align: middle;
-        }
-        .works-table td.title { font-weight: 300 !important; color: #111; letter-spacing: 0.03em; }
-        .works-table td.dim { color: #999; font-size: 11px; }
-
         .project-cover {
           width: 100%;
           aspect-ratio: 16/9;
@@ -81,16 +68,19 @@ export default function Print() {
           </button>
         </div>
 
-        {/* ── 第一页：封面 + 简介 + 作品目录 ── */}
+        {/* ── 首页：封面 + 简介 + 获奖信息 ── */}
         <div>
           <div style={{ marginBottom: "28px" }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", paddingBottom: "10px" }}>
-              <div style={{ display: "flex", alignItems: "baseline", gap: "20px" }}>
-                <h1 style={{ fontSize: "38px", fontWeight: 300, letterSpacing: "0.06em", margin: 0 }}>翟正龙</h1>
-                <span style={{ fontSize: "11px", letterSpacing: "0.18em", textTransform: "uppercase", color: "#666", fontFamily: '"KaiTi","楷体","STKaiti",serif' }}>
-                  摄影指导 · Director of Photography
-                </span>
-              </div>
+              <h1 style={{
+                fontSize: "32px",
+                fontWeight: 700,
+                letterSpacing: "0.01em",
+                fontFamily: "Georgia, 'Times New Roman', serif",
+                margin: 0,
+              }}>
+                Cinematographer
+              </h1>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: "3px" }}>
                 <span style={{ fontSize: "12px", color: "#aaa", letterSpacing: "0.08em" }}>ZHAI ZHENGLONG</span>
                 <span style={{ fontSize: "11px", color: "#aaa" }}>2026</span>
@@ -129,35 +119,13 @@ export default function Print() {
                 </p>
                 <p style={{ fontSize: "11px", lineHeight: 1.7, color: "#666", margin: 0 }}>
                   ASC Student Heritage Awards<br />
-                  2026 获奖 / Winner
+                  2026 获奖 / Winner · <em>Under Grace</em><br />
+                  Tom Houghton, ASC Graduate Award<br />
+                  New York Film Academy
                 </p>
               </div>
             </div>
           </div>
-
-          <p className="lbl">作品目录</p>
-          <table className="works-table">
-            <thead>
-              <tr>
-                <th style={{ width: "38%" }}>片名</th>
-                <th>类型</th>
-                <th>格式</th>
-                <th>时长</th>
-                <th style={{ textAlign: "right" }}>年份</th>
-              </tr>
-            </thead>
-            <tbody>
-              {projects.map(p => (
-                <tr key={p.id}>
-                  <td className="title">{p.title}</td>
-                  <td className="dim">短片</td>
-                  <td className="dim">{p.format || "Digital"}</td>
-                  <td className="dim">{p.duration || "—"}</td>
-                  <td className="dim" style={{ textAlign: "right" }}>{p.year}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
         </div>
 
         {/* ── 每个项目单独一页 ── */}
