@@ -63,7 +63,7 @@ export const projects: Project[] = [
     location: "Los Angeles",
     role: "Director of Photography",
     type: "Short Film",
-    thumbnail: "under-grace-22.jpg",
+    thumbnail: "under-grace-cover.png",
     stills: [
       "under-grace-22.jpg", "under-grace-1.jpg", "under-grace-21.jpg", "under-grace-2.jpg", "under-grace-3.jpg",
       "under-grace-4.jpg", "under-grace-5.jpg", "under-grace-6.jpg",

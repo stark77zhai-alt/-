@@ -97,7 +97,7 @@ export default function WorkDetail() {
               UNDER GRACE
             </h1>
             <p style={{ fontSize: "13px", fontWeight: 300, lineHeight: 1.7, color: "#5A5954", margin: 0 }}>
-              ASC Student Heritage Awards · Tom Houghton, ASC Graduate Award nominee
+              ASC Student Heritage Awards · Tom Houghton, ASC Graduate Award winner
               <br />
               New York Film Academy
             </p>

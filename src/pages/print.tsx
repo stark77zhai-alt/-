@@ -129,7 +129,7 @@ export default function Print() {
                 </p>
                 <p style={{ fontSize: "11px", lineHeight: 1.7, color: "#666", margin: 0 }}>
                   ASC Student Heritage Awards<br />
-                  2026 提名 / Nominee
+                  2026 获奖 / Winner
                 </p>
               </div>
             </div>

@@ -52,7 +52,7 @@ export default function About() {
               ASC Student Heritage Awards
             </p>
             <p style={{ fontSize: "13px", fontWeight: 300, lineHeight: 1.7, color: "#5A5954", margin: "0 0 18px" }}>
-              Tom Houghton, ASC Graduate Award nominee for <em>Under Grace</em>
+              Tom Houghton, ASC Graduate Award winner for <em>Under Grace</em>
               <br />
               New York Film Academy
             </p>
