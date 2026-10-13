@@ -5,6 +5,7 @@ import { useState, useEffect, useCallback } from "react";
 
 const base = import.meta.env.BASE_URL;
 const ASC_ARTICLE_URL = "https://theasc.com/news/asc-student-heritage-award-nominees-2026/";
+const UNDER_GRACE_AWARD_IMAGE = "under-grace-award.jpg";
 
 export default function WorkDetail() {
   const params = useParams();
@@ -86,7 +87,7 @@ export default function WorkDetail() {
 
       {project.id === "under-grace" && (
         <section className="detail-recognition" aria-label="Recognition">
-          <div>
+          <div className="detail-recognition-copy">
             <div style={{ display: "flex", alignItems: "baseline", gap: "16px", marginBottom: "12px" }}>
               <p style={{ fontSize: "10px", fontWeight: 400, letterSpacing: "0.18em", textTransform: "uppercase", color: "#77756F", margin: 0 }}>
                 Recognition
@@ -101,14 +102,28 @@ export default function WorkDetail() {
               <br />
               New York Film Academy
             </p>
+            <a
+              className="detail-award-announcement"
+              href={ASC_ARTICLE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Official announcement ↗
+            </a>
           </div>
           <a
-            href={ASC_ARTICLE_URL}
+            className="detail-award-image-link"
+            href={`${base}${UNDER_GRACE_AWARD_IMAGE}`}
             target="_blank"
             rel="noopener noreferrer"
-            style={{ flexShrink: 0, fontSize: "10px", fontWeight: 400, letterSpacing: "0.14em", textTransform: "uppercase", color: "#5A5954", textDecoration: "none", borderBottom: "1px solid rgba(39,38,35,0.2)", paddingBottom: "5px" }}
+            aria-label="Open the 2026 ASC Graduate Award image in a new tab"
           >
-            Official announcement ↗
+            <img
+              src={`${base}${UNDER_GRACE_AWARD_IMAGE}`}
+              alt="2026 Tom Houghton, ASC Graduate Award graphic for Zhenglong Zhai’s film Under Grace"
+              loading="lazy"
+              decoding="async"
+            />
           </a>
         </section>
       )}
