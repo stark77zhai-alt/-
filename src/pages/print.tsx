@@ -88,12 +88,12 @@ export default function Print() {
             </div>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "36px", marginBottom: "32px" }}>
+          <div className="profile-layout" style={{ display: "grid", gridTemplateColumns: "1.08fr 0.92fr", gap: "32px", marginBottom: "24px", alignItems: "stretch" }}>
             <div>
               <img
                 src={`${base}about-photo.jpg`}
                 alt="翟正龙"
-                style={{ width: "100%", aspectRatio: "4/3", objectFit: "cover", display: "block", marginBottom: "12px" }}
+                style={{ width: "100%", height: "430px", objectFit: "cover", objectPosition: "58% center", display: "block", marginBottom: "14px" }}
               />
               <p className="lbl">简介</p>
               <p style={{ fontSize: "12px", lineHeight: 1.85, color: "#444", margin: 0 }}>
@@ -101,18 +101,22 @@ export default function Print() {
                 擅长以光与影叙述故事，作品涵盖叙事短片与长片项目。
               </p>
             </div>
-            <div>
-              <p className="lbl">所属机构</p>
-              <p style={{ fontSize: "12px", lineHeight: 1.85, color: "#444", margin: "0 0 16px" }}>
-                 电影摄影师协会（SOC）
-              </p>
-              <p className="lbl">联系方式</p>
-              <p style={{ fontSize: "12px", lineHeight: 1.85, color: "#444", margin: 0 }}>
-                stark77zhai@gmail.com<br />
-                +86 185 9428 9284<br />
-                <span style={{ color: "#aaa" }}>上海 / 深圳</span>
-              </p>
-              <div style={{ borderTop: "1px solid #e0e0e0", marginTop: "20px", paddingTop: "14px" }}>
+            <div style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", minHeight: "430px" }}>
+              <div>
+                <p className="lbl">所属机构</p>
+                <p style={{ fontSize: "12px", lineHeight: 1.85, color: "#444", margin: 0 }}>
+                  掌机协会（SOC）
+                </p>
+              </div>
+              <div>
+                <p className="lbl">联系方式</p>
+                <p style={{ fontSize: "12px", lineHeight: 1.85, color: "#444", margin: 0 }}>
+                  stark77zhai@gmail.com<br />
+                  +86 185 9428 9284<br />
+                  <span style={{ color: "#aaa" }}>上海 / 深圳</span>
+                </p>
+              </div>
+              <div style={{ borderTop: "1px solid #e0e0e0", paddingTop: "14px" }}>
                 <p className="lbl">奖项 / Awards</p>
                 <p style={{ fontSize: "12px", lineHeight: 1.7, color: "#111", margin: "0 0 4px", fontWeight: 300 }}>
                   美国电影摄影师协会传承奖
@@ -120,8 +124,7 @@ export default function Print() {
                 <p style={{ fontSize: "11px", lineHeight: 1.7, color: "#666", margin: 0 }}>
                   ASC Student Heritage Awards<br />
                   2026 获奖 / Winner · <em>Under Grace</em><br />
-                  Tom Houghton, ASC Graduate Award<br />
-                  New York Film Academy
+                  Tom Houghton, ASC Graduate Award
                 </p>
               </div>
             </div>
